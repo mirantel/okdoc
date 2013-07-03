@@ -1,0 +1,24 @@
+@import "lib/base";
+/* default layout */
+.l{
+	width: 100%;
+	display: inline-block;
+	.l-col1{
+		float:left;
+		width: 531px;
+	}
+
+	.l-col2{
+		float:right;
+		width: 401px;
+	}
+	.l-col3{
+		float:left;
+		width: 160px;
+	}
+
+	.l-col4{
+		float:right;
+		width: 777px;
+	}
+}

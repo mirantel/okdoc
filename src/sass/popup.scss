@@ -1,0 +1,450 @@
+@import "lib/base";
+.popup-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,.3);
+	z-index: 100;
+	display: none;
+}
+.popup{
+	position: fixed;
+	top:-250%;
+	left:50%;
+	border:1px solid #c6c6c6;
+	box-shadow:0 5px 18px rgba(0,0,0,.4);
+	border-radius:9px;
+	background: #fff;
+	z-index: 120;
+	@include transition(top, .5s, ease-in-out);
+	//display: none;
+	opacity: 0;
+}
+.is-shown{
+	top:50%;
+	opacity: 1;
+}
+.popup-close{
+	position: absolute;
+	@include sized-sprite($icons, 'popup-close');
+	cursor: pointer;
+	top: 20px;
+	right: 20px;
+	&:hover{
+		opacity: 0.7;
+	}
+}
+.popup-title{
+	font-family: $comic;
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0 0 15px -3px;
+}
+.popup_doctors-type{
+	width: 705px - 25px - 15px;
+	margin: -232px 0 0 -352px;
+	padding: 17px 15px 25px 25px;
+	.choose-doctor{
+		@include column-count(4);
+		@include column-gap(23px);
+		.column{
+//			padding-left: 23px;
+			&.first{
+				//padding-left: 0;
+			}
+		}
+		li{
+			list-style: none;
+			margin-bottom: 13px;
+			line-height: 16px;
+		}
+	}
+	.btn-hold{
+		height: 38px;
+		width: 100%;
+	}
+	.btn{
+		position: absolute;
+		bottom: 25px;
+		right: 32px;
+		padding: 0 32px;
+	}
+}
+
+.popup_metro{
+	width: 766px - 28px;
+	margin: -275px 0 0 -383px;
+	padding: 17px 0 25px 28px;
+	position: absolute;
+	.metro{
+		position: relative;
+		padding: 15px 0 0 5px;
+	}
+	.pointer{
+		position: absolute;
+		@include sized-sprite($icons, 'pointer');
+		bottom: 7px;
+		left: -7px;
+		display: none;
+		z-index: 10;
+	}
+	input[type="radio"]{
+		&:checked + label::before{display: none;}
+		&:checked + label .pointer{display: block;}
+	}
+	input[type="radio"] + label{
+		@include unselectable();
+		font-size: 0;
+		line-height: 0;
+		color: transparent;
+		display: block;
+		width: 17px;
+		height: 17px;
+		border-radius:50%;
+		cursor: pointer;
+		position: relative;
+		background: transparent;
+		&::before{display: none;}
+	}
+	.metro-station{
+		li{
+			position: absolute;
+			list-style: none;
+			height: 17px;
+			width: 17px;
+			cursor: pointer;
+			input{
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				cursor: pointer;
+			}
+		}
+	}
+	.metro-kholodnaya-gora{
+		left: 203px;
+		top: 314px;
+	}
+	.metro-yuzhnyi-vokzal{
+		left: 236px;
+		top: 301px;
+	}
+	.metro-tsentralnyi-rynok{
+		left: 270px;
+		top: 287px;
+	}
+	.metro-sovetskaya{
+		left: 314px;
+		top: 298px;
+	}
+	.metro-prospekt-gagarina{
+		left: 338px;
+		top: 328px;
+	}
+	.metro-sportivnaya{
+		left: 373px;
+		top: 349px;
+	}
+	.metro-malysheva{
+		left: 408px;
+		top: 370px;
+	}
+	.metro-moskovskii-prospekt{
+		left: 443px;
+		top: 392px;
+	}
+	.metro-marshala-zhukova{
+		left: 479px;
+		top: 413px;
+	}
+	.metro-sovetskoi-armii{
+		left: 514px;
+		top: 435px;
+	}
+	.metro-maselskogo{
+		left: 549px;
+		top: 456px;
+	}
+	.metro-traktornyi-zavod{
+		left: 585px;
+		top: 477px;
+	}
+	.metro-proletarskaya{
+		left: 620px;
+		top: 499px;
+	}
+
+	.metro-geroev-truda{
+		left: 520px;
+		top: 146px;
+	}
+	.metro-studencheskaya{
+		left: 494px;
+		top: 174px;
+	}
+	.metro-akademika-pavlova{
+		left: 470px;
+		top: 201px;
+	}
+	.metro-akademika-barabashova{
+		left: 444px;
+		top: 229px;
+	}
+	.metro-kievskaya{
+		left: 408px;
+		top: 229px;
+	}
+	.metro-pushkinskaya{
+		left: 372px;
+		top: 229px;
+	}
+	.metro-universitet{
+		left: 336px;
+		top: 229px;
+	}
+	.metro-istoricheskii-muzei{
+		left: 314px;
+		top: 278px;
+	}
+
+	.metro-pr-pobedy{
+		left: 317px;
+		top: 14px;
+	}
+	.metro-alekseevskaya{
+		left: 317px;
+		top: 57px;
+	}
+	.metro-23-avgusta{
+		left: 317px;
+		top: 100px;
+	}
+	.metro-botanicheskii-sad{
+		left: 317px;
+		top: 143px;
+	}
+	.metro-nauchnaya{
+		left: 317px;
+		top: 186px;
+	}
+	.metro-gosprom{
+		left: 317px;
+		top: 229px;
+	}
+	.metro-arkhitektora-beketova{
+		left: 345px;
+		top: 260px;
+	}
+	.metro-pl-vosstaniya{
+		left: 373px;
+		top: 292px;
+	}
+	.metro-metrost-im-vashchenko{
+		left: 374px;
+		top: 330px;
+	}
+
+	.btn-hold{
+		text-align: center;
+	}
+}
+
+.popup_request{
+	width: 903px - 28px - 25px;
+	margin: -240px 0 0 -451px;
+	padding: 24px 25px 28px 28px;
+	background: #fff url(../img/doctor3.jpg) no-repeat 713px 226px;
+	.popup-title{
+		margin-bottom: 30px;
+	}
+}
+.reques-form{
+	float: left;
+	width: 348px;
+	.row{
+		margin-bottom: 8px;
+	}
+	input[type="text"]{
+		font-size: 12px;
+		height: 32px;
+		padding: 0 10px;
+		width: 267px;
+	}
+	.row-check{
+		margin: 11px 0 22px;
+		input{
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+	}
+	.row-radio{
+		margin-bottom: 12px;
+		span{
+			color: #000;
+			display: inline-block;
+			margin-right: 12px;
+		}
+		label{
+			font-size: 12px;
+		}
+	}
+	.radio {
+		display: inline-block;
+		margin-right: 7px;
+	}
+	textarea{
+		font-size: 12px;
+    	padding: 5px 10px;
+    	width: 267px;
+    	height: 78px;
+    	resize: none;
+	}
+	.row-btn{
+		margin: 16px 0 0 32px;
+	}
+	.btn{
+		padding: 0 22px;
+		height: 31px;
+	}
+}
+.request-inf{
+	float: left;
+	width: 502px - 53px;
+	padding-left: 52px;
+	height: 375px;
+	border-left:1px solid #e4e4e4;
+	p{
+		font-size: 12px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	em{
+		font-size: 18px;
+		font-style: normal;
+	}
+	.phone{
+		font-size: 24px;
+		color: #169073;
+	}
+}
+
+.popup_appointment{
+	width: 494px;
+	height: 419px;
+	margin: -209px 0 0 -247px;
+	background: #fff url("../img/doctor4.jpg") no-repeat 353px 153px;
+	.appointment{
+		border: none;
+		width: auto;
+		float: none;
+		background: none;
+		padding: 15px 30px 13px;
+		h2{
+			font-size: 22px;
+			letter-spacing: 0;
+			margin-bottom: 9px;
+			color: #404040;
+		}
+		.phone{
+			font-size: 12px;
+			letter-spacing: 0;
+			strong{
+				font-size: 18px;
+				span{font-size: 16px;}
+			}
+		}
+		.btn-holder{
+			width: 291px;
+			padding-top: 17px;
+		}
+	}
+	form{
+		margin-top: 8px;
+	}
+	.row-textarea{
+		margin-top: 10px;
+		textarea{
+			font-size: 12px;
+			height: 74px;
+			padding: 7px 13px;
+			width: 263px;
+			resize: none;
+		}
+	}
+	.doctor{
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+		font-family: $comic;
+		dt{
+			float: left;
+			margin-right: 6px;
+		}
+		dd{margin-bottom: 6px;}
+	}
+}
+
+.popup_entry{
+	width: 707px - 30px;
+	padding: 24px 0 0 30px;
+	margin: -136px 0 0 -353px;
+	height: 248px;
+			background: #fff url("../img/doctor4.jpg") no-repeat 353px 17px;
+	.entry-form{
+		padding: 16px 0 0;
+		width: 300px;
+	}
+	input[type="text"]{
+		font-size: 12px;
+		height: 31px;
+		padding: 0 11px;
+		width: 265px;
+	}
+	.row{
+		margin-bottom: 8px;
+	}
+	.row-text{margin-top: 15px;}
+	.check{
+		display: inline-block;
+		margin-left: 27px;
+		input{
+			vertical-align: middle;
+			margin-right: 8px;
+		}
+	}
+	.btn-hold{
+		left: 30px;
+		position: absolute;
+		text-align: center;
+		top: 207px;
+		width: 286px;
+	}
+	.btn{
+		height: 31px;
+		width: 111px;
+		padding: 0;
+		margin: 0 2px;
+		line-height: 31px;
+		vertical-align: middle;
+	}
+	div.btn{
+		height: 29px;
+		line-height: 29px;
+		display: inline-block;
+	}
+	.entry-text{
+		position: absolute;
+		left: 487px;
+		line-height: 18px;
+		top:94px;
+		font-size: 12.5px;
+		a{
+			color: #239b8c;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

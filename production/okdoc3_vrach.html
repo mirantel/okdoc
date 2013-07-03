@@ -1,0 +1,416 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<!--[if lte IE 9]>
+		<script src="js/jquery.placeholderpatch.js"></script>
+		<script src="js/jquery.columnizer.js"></script>
+		<script src="js/common_ie.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  .wrap-->
+<div class="wrap">
+	<!-- BEGIN .header -->
+<div class="header header_min">
+	<div class="logo-hold">
+		<strong class="logo">Сервис по поиску врачей OkDok<a href="#"></a></strong>
+		<strong class="slogan-1">Мы отобрали для вас <br> лучших специалистов!</strong>
+		<strong class="slogan-2">Выберите специалиста <br> и запишитесь на прием!</strong>
+	</div>
+	<div class="contact-hold">
+		<div class="contact-city">
+			<div class="city-select">
+				<span>Харьков</span>
+				<span class="arr"></span>
+			</div>
+			<ul class="city-list">
+				<li>Киев</li>
+				<li>Днепропетровск</li>
+				<li>Донецк</li>
+			</ul>
+		</div>
+		<strong class="question-slogan">
+			<span class="blue">Ищете хорошего врача?</span>
+			<span class="green">Нужны рекомендации?</span>
+		</strong>
+		<strong class="contact-slogan">Поручите нам подбор врача!</strong>
+		<a href="#" class="contact-mail"><span class="mail-ico"></span>Отправить заявку на подбор врача</a>
+		<div class="contact-phone">
+			<strong><span class="phone-ico"></span>Позвоните</strong>
+			<ul>
+				<li>+8 (057) 565-33-03</li>
+				<li>+8 (057) 565-33-03</li>
+				<li>+8 (057) 565-33-03</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END .header -->
+	<!-- BEGIN .main -->
+<div class="main">
+	<!-- BEGIN  .search -->
+	<div class="search search_wide">
+		<ul class="search-tabs-nav">
+			<li class="is-active">ПОИСК ПО ПАРАМЕТРАМ</li>
+			<li>СВОБОДНЫЙ ПОИСК</li>
+		</ul>
+		<div class="search-content">
+			<div class="search-tabs-content">
+				<div class="search-block"><form action="#">
+					<div class="col">
+						<div class="row">
+							<label for="" class="search-label">Ищу врача</label>
+							<input type="text" class="search-input" placeholder="по всем специальностям">
+							<a href="#" class="search-icon" id="js-doctor-type"></a>
+						</div>
+						<div class="row">
+							<label for="" class="search-label">В районе</label>
+							<input type="text" class="search-input" placeholder="любом">
+							<a href="#" class="search-icon"  id="js-metro"></a>
+						</div>
+					</div>
+					<input type="submit" value="Найти врача" class="btn search-btn1">
+				</form></div>
+				<div class="search-block" style="display: none;"><form action="#">
+					<div class="col">
+						<div class="row">
+							<label for="" class="search-label search-label1">Поиск</label>
+							<input type="text" class="search-input search-input1" placeholder="введите ключевое слово">
+							<a href="#" class="search-icon"></a>
+						</div>
+					</div>
+					<input type="submit" value="Найти" class="btn search-btn2">
+				</form></div>
+			</div>
+		</div>
+	</div>
+	<!-- END  .search -->
+
+	<!-- BEGIN  .l -->
+		<div class="l">
+			<!-- BEGIN  .l-col1 -->
+			<div class="l-col3">
+				<!-- BEGIN .illness -->
+				<div class="illness">
+					<h2 class="illness-title">Другие блезни</h2>
+					<ul class="illness-list">
+						<li><a href="#">Атеросклероз</a></li>
+						<li><a href="#">Брадикардия</a></li>
+						<li><a href="#">Гипертонический криз</a></li>
+						<li><a href="#">Инфаркт миокарда</a></li>
+						<li><a href="#">Ишемическая болезнь сердца</a></li>
+						<li><a href="#">Миокардит</a></li>
+						<li><a href="#">Перикардит</a></li>
+					</ul>
+				</div>
+				<!-- END .illness -->
+				<!-- BEGIN .doctor-list -->
+				<ul class="doctor-list">
+					<li><a href="#">Все врачи</a></li>
+					<li class="is-active"><a href="#">Акушер-гинеколог</a></li>
+					<li><a href="#">Аллерголог</a></li>
+					<li><a href="#">Андролог</a></li>
+					<li><a href="#">Анестезиолог</a></li>
+					<li><a href="#">Венеролог</a></li>
+					<li><a href="#">Гастроэнтеролог</a></li>
+					<li><a href="#">Гематолог</a></li>
+					<li><a href="#">Гепатолог</a></li>
+					<li><a href="#">Гинеколог</a></li>
+					<li><a href="#">Гомеопат</a></li>
+					<li><a href="#">Дерматолог</a></li>
+					<li><a href="#">Диетолог</a></li>
+					<li><a href="#">Иммунолог</a></li>
+					<li><a href="#">Инфекционист</a></li>
+					<li><a href="#">Кардиолог</a></li>
+					<li><a href="#">Косметолог</a></li>
+					<li><a href="#">Логопед</a></li>
+					<li><a href="#">Лор (отоларинголог)</a></li>
+					<li><a href="#">Маммолог</a></li>
+					<li><a href="#">Мануальный терапевт</a></li>
+					<li><a href="#">Массажист</a></li>
+					<li><a href="#">Нарколог</a></li>
+					<li><a href="#">Невролог</a></li>
+					<li><a href="#">Нефролог</a></li>
+					<li><a href="#">Окулист (офтальмолог)</a></li>
+					<li><a href="#">Онколог</a></li>
+					<li><a href="#">Ортопед</a></li>
+					<li><a href="#">Педиатр</a></li>
+					<li><a href="#">Пластический хирург</a></li>
+					<li><a href="#">Проктолог</a></li>
+					<li><a href="#">Психиатр</a></li>
+					<li><a href="#">Психолог</a></li>
+					<li><a href="#">Психотерапевт</a></li>
+					<li><a href="#">Пульмонолог</a></li>
+					<li><a href="#">Ревматолог</a></li>
+					<li><a href="#">Репродуктолог (ЭКО)</a></li>
+					<li><a href="#">Сексолог</a></li>
+					<li><a href="#">Стоматолог</a></li>
+					<li><a href="#">Терапевт</a></li>
+					<li><a href="#">Трихолог</a></li>
+					<li><a href="#">УЗИ-специалист</a></li>
+					<li><a href="#">Уролог</a></li>
+					<li><a href="#">Флеболог</a></li>
+					<li><a href="#">Хирург</a></li>
+					<li><a href="#">Эндокринолог</a></li>
+				</ul>
+				<!-- END .doctor-list -->
+
+				<img src="img/doctor2.jpg" alt="" class="doctor2">
+
+				<!-- BEGIN  .info-list -->
+				<ul class="info-list info-list_blue info-list_min">
+					<li>
+						<div class="media"><img src="img/info-img-02_min.png" class="info-img1_min" alt=""></div>
+						<h3><a href="#">Справочник заболеваний</a></h3>
+						<p>Полезные статьи о заболеваниях, современных методах лечения и диагностиках.</p>
+					</li>
+					<li>
+						<div class="media"><img src="img/info-img-01_min.png" class="info-img2_min" alt=""></div>
+						<h3 class="top-indent"><a href="#">Диагностические центры</a></h3>
+						<p>Вам нужно провести диагностику или обследование? Специализированный портал поможет подобрать диагностический центр рядом с домом.</p>
+					</li>
+					<li>
+						<div class="media"><img src="img/info-img-03_min.png" class="info-img3_min" alt=""></div>
+						<h3><a href="#">Справочник пациента</a></h3>
+						<p>Полезные статьи о заболеваниях, современных методах лечения и диагностиках.</p>
+					</li>
+				</ul>
+				<!-- END  .info-list -->
+			</div>
+			<!-- BEGIN  .l-col1 -->
+
+			<!-- BEGIN  .l-col2 -->
+			<div class="l-col4">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a> ></li>
+					<li><a href="#">Акушерство</a> ></li>
+					<li>Что лечит врач акушер-гинеколог</li>
+				</ul>
+				<!-- BEGIN .text-info -->
+				<div class="text-info">
+					<h1>Что лечит врач акушер-гинеколог</h1>
+					<p>Акушер-гинеколог – врач, который занимается ведением беременности и родов. Акушер-гинеколог помогает в случае проблем с зачатием, бесплодия, необходимости ведения беременности и родов, наличия патологических состояний при беременности. Также он оказывает помощь в послеродовом периоде.</p>
+					<p>Не стоит путать гинекологов и акушеров-гинекологов. Хоть все эти врачи получают образование одновременно и по акушерству, и по гинекологии, на данный момент в клиниках принято разделение на гинекологов, занимающихся лечением женских болезней и акушеров-гинекологов, специализирующихся на ведении беременности и родов. Не стоит путать также врача акушера-гинеколога и акушера – последний врачом не является и лишь помогает женщине при родах, а профессиональный медицинский контроль при родах осуществляет именно врач акушер-гинеколог.</p>
+					<dl>
+						<dt>
+							Что делает акушер-гинеколог
+							<span>Врач акушер-гинеколог занимается:</span>
+						</dt>
+						<dd>
+							<ul>
+								<li>подготовкой к беременности – проведение необходимых анализов и обследований для выяснения готовности организма женщины к зачатию);</li>
+								<li>ведением беременности (в том числе проблемной) – наблюдение за женщиной и плодом на всех этапах беременности;</li>
+								<li>ведением родов – подготовка к родам и присутствие на самих родах для профессионального контроля;</li>
+								<li>лечение патологий беременности – выкидыши, ранние роды, внематочное зачатие;</li>
+								<li>лечение бесплодия;</li>
+								<li>лечение травм и воспалительных процессов женских репродуктивных органов, влияющих на состояние плода (например, разрывы шейки матки);</li>
+								<li>наблюдение за женщиной после родов и лечение возможных послеродовых осложнений, травм и разрывов.</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							Как проводится первичный прием у акушера-гинеколога
+							<span>На первом приеме врач:</span>
+						</dt>
+						<dd>
+							<ul>
+								<li>выслушивает жалобы пациента, предполагает наличие или отсутствие беременности, заполняет медицинскую карту;<br>выполняет осмотр груди;</li>
+								<li>проводит осмотр в гинекологическом кресле с помощью специального прибора – зеркала;<br>берет мазки на анализы;</li>
+								<li>проводит обследование руками методом пальпации (ощупывание), иногда требуется прощупывание не через влагалище, а через анальное отверстие;</li>
+								<li>определяет наличие и срок беременности;</li>
+								<li>если существует необходимость, назначает дополнительные тесты: анализ крови, мочи, УЗИ и другие;</li>
+								<li>если помимо беременности обнаружены патологии, назначает лечение или отправляет к другому врачу.</li>
+							</ul>
+						</dd>
+					</dl>
+					<p><em>Данная статья размещена исключительно в познавательных целях и не является научным материалом или профессиональным медицинским советом.</em></p>
+				</div>
+				<!-- END .text-info -->
+
+				<div class="number-of-doctors">
+					В нашей базе 59 специалистов<br>
+					по лечению аритмии сердца
+				</div>
+
+				<!-- BEGIN .search-result -->
+				<ul class="search-result">
+					<li>
+						<!-- BEGIN .left-col -->
+						<div class="left-col">
+							<div class="doctor-photo">
+								<a href="#"><img src="img/photo-01.jpg" alt=""></a>
+							</div>
+							<div class="doctor-reviews">
+								<span>отзывов:</span>
+								<span class="num">5</span>
+							</div>
+						</div>
+						<!-- END .left-col -->
+
+						<!-- BEGIN .doctor-info -->
+						<div class="doctor-info">
+							<h2 class="doctor-name"><a href="#">Иванова Елена Томовна</a></h2>
+							<strong class="doctor-profile">Акушер-гинеколог</strong>
+							<dl class="doctor-add-inf">
+								<dt>Район: </dt>
+									<dd>Новые Черемушки, Проспект Вернадского</dd>
+								<dt>Выезд на дом: </dt>
+									<dd>невозможен</dd>
+								<dt>Стоимость приема: </dt>
+									<dd><strong>2000 руб.</strong></dd>
+							</dl>
+							<p>Специалист по воспалительным заболеваниям органов малого таза, инфекциям, передающихся половым путем, патологии шейки матки, бесплодию. Ведет наблюдение за беременностью любого триместра, принимает роды любой сложности.</p>
+							<a href="#" class="btn js-appointment">Запись на прием</a>
+							<div class="doctor-grade">
+								<span class="doctor-exp">стаж 17 лет</span>
+								<div class="stars">
+									<div class="stars-active"></div>
+								</div>
+								<strong class="doctor-rating">
+									4<span>.6</span>
+								</strong>
+								<div class="question">
+									<span class="js-question">?</span>
+									<div class="hint">
+										<div class="hint-arr"></div>
+										<h2>Рейтинг врача</h2>
+										<p>Рейтинг врача сформирован на основании следующих показателей:</p>
+										<ul>
+											<li>образование;</li>
+											<li>опыт работы;</li>
+											<li>научная степень;</li>
+											<li>отзывы пациентов.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div href="#" class="complain">
+								<span class="complain-link">пожаловаться</span>
+								<div class="complain-drop">
+									<div class="complain-arr"></div>
+									<form action="#">
+										<ul>
+											<li><span class="complain-close">скрыть</span></li>
+											<li><a href="#">неверная цена</a></li>
+											<li><a href="#">неверный адрес</a></li>
+											<li><a href="#">врач не принимает</a></li>
+										</ul>
+										<textarea name="" id="" cols="30" rows="10" placeholder="другое"></textarea>
+										<input type="submit" class="btn" value="Отправить">
+									</form>
+								</div>
+							</div>
+
+						</div>
+						<!-- END .doctor-info -->
+					</li>
+
+					<li>
+						<!-- BEGIN .left-col -->
+						<div class="left-col">
+							<div class="doctor-photo">
+								<a href="#"><img src="img/photo-01.jpg" alt=""></a>
+							</div>
+							<div class="doctor-reviews">
+								<span>отзывов:</span>
+								<span class="num">5</span>
+							</div>
+						</div>
+						<!-- END .left-col -->
+
+						<!-- BEGIN .doctor-info -->
+						<div class="doctor-info">
+							<h2 class="doctor-name"><a href="#">Иванова Елена Томовна</a></h2>
+							<strong class="doctor-profile">Акушер-гинеколог</strong>
+							<dl class="doctor-add-inf">
+								<dt>Район: </dt>
+									<dd>Новые Черемушки, Проспект Вернадского</dd>
+								<dt>Выезд на дом: </dt>
+									<dd>невозможен</dd>
+								<dt>Стоимость приема: </dt>
+									<dd><strong>2000 руб.</strong></dd>
+							</dl>
+							<p>Специалист по воспалительным заболеваниям органов малого таза, инфекциям, передающихся половым путем, патологии шейки матки, бесплодию. Ведет наблюдение за беременностью любого триместра, принимает роды любой сложности.</p>
+							<a href="#" class="btn js-appointment">Запись на прием</a>
+							<div class="doctor-grade">
+								<span class="doctor-exp">стаж 17 лет</span>
+								<div class="stars">
+									<div class="stars-active"></div>
+								</div>
+								<strong class="doctor-rating">
+									4<span>.6</span>
+								</strong>
+								<div class="question">
+									<span class="js-question">?</span>
+									<div class="hint">
+										<div class="hint-arr"></div>
+										<h2>Рейтинг врача</h2>
+										<p>Рейтинг врача сформирован на основании следующих показателей:</p>
+										<ul>
+											<li>образование;</li>
+											<li>опыт работы;</li>
+											<li>научная степень;</li>
+											<li>отзывы пациентов.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div href="#" class="complain">
+								<span class="complain-link">пожаловаться</span>
+								<div class="complain-drop">
+									<div class="complain-arr"></div>
+									<form action="#">
+										<ul>
+											<li><span class="complain-close">скрыть</span></li>
+											<li><a href="#">неверная цена</a></li>
+											<li><a href="#">неверный адрес</a></li>
+											<li><a href="#">врач не принимает</a></li>
+										</ul>
+										<textarea name="" id="" cols="30" rows="10" placeholder="другое"></textarea>
+										<input type="submit" class="btn" value="Отправить">
+									</form>
+								</div>
+							</div>
+
+						</div>
+						<!-- END .doctor-info -->
+					</li>
+
+				</ul>
+				<!-- END .search-result -->
+				<div class="search-show-all">
+					<a href="#">Показать всех специалистов</a>
+				</div>
+
+			</div>
+			<!-- BEGIN  .l-col2 -->
+		</div>
+	<!-- END .l -->
+</div>
+<!-- END .main
+	<!-- BEGIN .footer -->
+<div class="footer">
+	<div class="footer-left">
+		<p>OkDoc.ru – поиск врачей и клиник Харькова</p>
+		<p>Copyright © 2013 <a href="#">Карта сайта</a></p>
+	</div>
+	<div class="footer-right">
+		<p><a href="#">Регистрация врачей и клиник</a> <a href="#" id="js-entry">Вход в личный кабинет</a></p>
+		<p>Бесплатная регистрация и размещение анкет на портале</p>
+	</div>
+</div>
+<!-- END .footer -->
+</div>
+<!-- END .wrap-->
+
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<!--[if lte IE 9]>
+		<script src="js/jquery.placeholderpatch.js"></script>
+		<script src="js/jquery.columnizer.js"></script>
+		<script src="js/common_ie.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  .wrap-->
+<div class="wrap">
+	<!-- BEGIN .header -->
+<div class="header header_min">
+	<div class="logo-hold">
+		<strong class="logo">Сервис по поиску врачей OkDok<a href="#"></a></strong>
+		<strong class="slogan-1">Мы отобрали для вас <br> лучших специалистов!</strong>
+		<strong class="slogan-2">Выберите специалиста <br> и запишитесь на прием!</strong>
+	</div>
+	<div class="contact-hold">
+		<div class="contact-city">
+			<div class="city-select">
+				<span>Харьков</span>
+				<span class="arr"></span>
+			</div>
+			<ul class="city-list">
+				<li>Киев</li>
+				<li>Днепропетровск</li>
+				<li>Донецк</li>
+			</ul>
+		</div>
+		<strong class="question-slogan">
+			<span class="blue">Ищете хорошего врача?</span>
+			<span class="green">Нужны рекомендации?</span>
+		</strong>
+		<strong class="contact-slogan">Поручите нам подбор врача!</strong>
+		<a href="#" class="contact-mail"><span class="mail-ico"></span>Отправить заявку на подбор врача</a>
+		<div class="contact-phone">
+			<strong><span class="phone-ico"></span>Позвоните</strong>
+			<ul>
+				<li>+8 (057) 565-33-03</li>
+				<li>+8 (057) 565-33-03</li>
+				<li>+8 (057) 565-33-03</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END .header -->
+	<!-- BEGIN .main -->
+<div class="main">
+	<!-- BEGIN  .search -->
+	<div class="search search_wide">
+		<ul class="search-tabs-nav">
+			<li class="is-active">ПОИСК ПО ПАРАМЕТРАМ</li>
+			<li>СВОБОДНЫЙ ПОИСК</li>
+		</ul>
+		<div class="search-content">
+			<div class="search-tabs-content">
+				<div class="search-block"><form action="#">
+					<div class="col">
+						<div class="row">
+							<label for="" class="search-label">Ищу врача</label>
+							<input type="text" class="search-input" placeholder="по всем специальностям">
+							<a href="#" class="search-icon" id="js-doctor-type"></a>
+						</div>
+						<div class="row">
+							<label for="" class="search-label">В районе</label>
+							<input type="text" class="search-input" placeholder="любом">
+							<a href="#" class="search-icon"  id="js-metro"></a>
+						</div>
+					</div>
+					<input type="submit" value="Найти врача" class="btn search-btn1">
+				</form></div>
+				<div class="search-block" style="display: none;"><form action="#">
+					<div class="col">
+						<div class="row">
+							<label for="" class="search-label search-label1">Поиск</label>
+							<input type="text" class="search-input search-input1" placeholder="введите ключевое слово">
+							<a href="#" class="search-icon"></a>
+						</div>
+					</div>
+					<input type="submit" value="Найти" class="btn search-btn2">
+				</form></div>
+			</div>
+		</div>
+	</div>
+	<!-- END  .search -->
+
+	<!-- BEGIN  .l -->
+		<div class="l">
+			<!-- BEGIN  .l-col1 -->
+			<div class="l-col3">
+				<!-- BEGIN .doctor-list -->
+				<ul class="doctor-list">
+					<li><a href="#">Все врачи</a></li>
+					<li class="is-active"><a href="#">Акушер-гинеколог</a></li>
+					<li><a href="#">Аллерголог</a></li>
+					<li><a href="#">Андролог</a></li>
+					<li><a href="#">Анестезиолог</a></li>
+					<li><a href="#">Венеролог</a></li>
+					<li><a href="#">Гастроэнтеролог</a></li>
+					<li><a href="#">Гематолог</a></li>
+					<li><a href="#">Гепатолог</a></li>
+					<li><a href="#">Гинеколог</a></li>
+					<li><a href="#">Гомеопат</a></li>
+					<li><a href="#">Дерматолог</a></li>
+					<li><a href="#">Диетолог</a></li>
+					<li><a href="#">Иммунолог</a></li>
+					<li><a href="#">Инфекционист</a></li>
+					<li><a href="#">Кардиолог</a></li>
+					<li><a href="#">Косметолог</a></li>
+					<li><a href="#">Логопед</a></li>
+					<li><a href="#">Лор (отоларинголог)</a></li>
+					<li><a href="#">Маммолог</a></li>
+					<li><a href="#">Мануальный терапевт</a></li>
+					<li><a href="#">Массажист</a></li>
+					<li><a href="#">Нарколог</a></li>
+					<li><a href="#">Невролог</a></li>
+					<li><a href="#">Нефролог</a></li>
+					<li><a href="#">Окулист (офтальмолог)</a></li>
+					<li><a href="#">Онколог</a></li>
+					<li><a href="#">Ортопед</a></li>
+					<li><a href="#">Педиатр</a></li>
+					<li><a href="#">Пластический хирург</a></li>
+					<li><a href="#">Проктолог</a></li>
+					<li><a href="#">Психиатр</a></li>
+					<li><a href="#">Психолог</a></li>
+					<li><a href="#">Психотерапевт</a></li>
+					<li><a href="#">Пульмонолог</a></li>
+					<li><a href="#">Ревматолог</a></li>
+					<li><a href="#">Репродуктолог (ЭКО)</a></li>
+					<li><a href="#">Сексолог</a></li>
+					<li><a href="#">Стоматолог</a></li>
+					<li><a href="#">Терапевт</a></li>
+					<li><a href="#">Трихолог</a></li>
+					<li><a href="#">УЗИ-специалист</a></li>
+					<li><a href="#">Уролог</a></li>
+					<li><a href="#">Флеболог</a></li>
+					<li><a href="#">Хирург</a></li>
+					<li><a href="#">Эндокринолог</a></li>
+				</ul>
+				<!-- END .doctor-list -->
+
+				<img src="img/doctor2.jpg" alt="" class="doctor2">
+
+				<!-- BEGIN  .info-list -->
+				<ul class="info-list info-list_blue info-list_min">
+					<li>
+						<div class="media"><img src="img/info-img-02_min.png" class="info-img1_min" alt=""></div>
+						<h3><a href="#">Справочник заболеваний</a></h3>
+						<p>Полезные статьи о заболеваниях, современных методах лечения и диагностиках.</p>
+					</li>
+					<li>
+						<div class="media"><img src="img/info-img-01_min.png" class="info-img2_min" alt=""></div>
+						<h3 class="top-indent"><a href="#">Диагностические центры</a></h3>
+						<p>Вам нужно провести диагностику или обследование? Специализированный портал поможет подобрать диагностический центр рядом с домом.</p>
+					</li>
+					<li>
+						<div class="media"><img src="img/info-img-03_min.png" class="info-img3_min" alt=""></div>
+						<h3><a href="#">Справочник пациента</a></h3>
+						<p>Полезные статьи о заболеваниях, современных методах лечения и диагностиках.</p>
+					</li>
+				</ul>
+				<!-- END  .info-list -->
+			</div>
+			<!-- BEGIN  .l-col1 -->
+
+			<!-- BEGIN  .l-col2 -->
+			<div class="l-col4">
+				<div class="text-block">
+					<h2>Врачи-акушеры-гинекологи</h2>
+					<p><strong>Акушер</strong> - это врач, который оказывает помощь при родах.</p>
+					<p><strong>Консультация и прием у акушера необходим при:</strong> наступлении позднего срока беременности, для того чтобы заранее обсудить, как будут протекать роды.</p>
+					<p><strong>На нашем портале</strong> вы можете выбрать врача-акушера, акушера-гинеколога из лучших клиник Москвы и записаться к нему на прием. Найти хорошего специалиста вам помогут анкеты врачей с информацией об их опыте работы, образовании, а также отзывы  пациентов.</p>
+				</div>
+				<!-- BEGIN .search-filtr -->
+					<div class="search-filter">
+						<strong>Найден 41 врач</strong>
+						<dl class="sort-by">
+							<dt>упорядочить по:</dt>
+							<dd>
+								<ul class="sort-options">
+									<li class="sort-by-value">рейтингу</li>
+									<li class="sort-by-value">стоимости</li>
+									<li class="sort-by-value">опыту</li>
+									<li class="option-departure">
+										<input type="checkbox" id="departure">
+										<label for="departure">выезд на дом</label>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				<!-- END .search-filtr -->
+				<!-- BEGIN .search-result -->
+				<ul class="search-result">
+					<li>
+						<!-- BEGIN .left-col -->
+						<div class="left-col">
+							<div class="doctor-photo">
+								<a href="#"><img src="img/photo-01.jpg" alt=""></a>
+							</div>
+							<div class="doctor-reviews">
+								<span>отзывов:</span>
+								<span class="num">5</span>
+							</div>
+						</div>
+						<!-- END .left-col -->
+
+						<!-- BEGIN .doctor-info -->
+						<div class="doctor-info">
+							<h2 class="doctor-name"><a href="#">Иванова Елена Томовна</a></h2>
+							<strong class="doctor-profile">Акушер-гинеколог</strong>
+							<dl class="doctor-add-inf">
+								<dt>Район: </dt>
+									<dd>Новые Черемушки, Проспект Вернадского</dd>
+								<dt>Выезд на дом: </dt>
+									<dd>невозможен</dd>
+								<dt>Стоимость приема: </dt>
+									<dd><strong>2000 руб.</strong></dd>
+							</dl>
+							<p>Специалист по воспалительным заболеваниям органов малого таза, инфекциям, передающихся половым путем, патологии шейки матки, бесплодию. Ведет наблюдение за беременностью любого триместра, принимает роды любой сложности.</p>
+							<a href="#" class="btn js-appointment">Запись на прием</a>
+							<div class="doctor-grade">
+								<span class="doctor-exp">стаж 17 лет</span>
+								<div class="stars">
+									<div class="stars-active"></div>
+								</div>
+								<strong class="doctor-rating">
+									4<span>.6</span>
+								</strong>
+								<div class="question">
+									<span class="js-question">?</span>
+									<div class="hint">
+										<div class="hint-arr"></div>
+										<h2>Рейтинг врача</h2>
+										<p>Рейтинг врача сформирован на основании следующих показателей:</p>
+										<ul>
+											<li>образование;</li>
+											<li>опыт работы;</li>
+											<li>научная степень;</li>
+											<li>отзывы пациентов.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div href="#" class="complain">
+								<span class="complain-link">пожаловаться</span>
+								<div class="complain-drop">
+									<div class="complain-arr"></div>
+									<form action="#">
+										<ul>
+											<li><span class="complain-close">скрыть</span></li>
+											<li><a href="#">неверная цена</a></li>
+											<li><a href="#">неверный адрес</a></li>
+											<li><a href="#">врач не принимает</a></li>
+										</ul>
+										<textarea name="" id="" cols="30" rows="10" placeholder="другое"></textarea>
+										<input type="submit" class="btn" value="Отправить">
+									</form>
+								</div>
+							</div>
+
+						</div>
+						<!-- END .doctor-info -->
+					</li>
+
+					<li>
+						<!-- BEGIN .left-col -->
+						<div class="left-col">
+							<div class="doctor-photo">
+								<a href="#"><img src="img/photo-01.jpg" alt=""></a>
+							</div>
+							<div class="doctor-reviews">
+								<span>отзывов:</span>
+								<span class="num">5</span>
+							</div>
+						</div>
+						<!-- END .left-col -->
+
+						<!-- BEGIN .doctor-info -->
+						<div class="doctor-info">
+							<h2 class="doctor-name"><a href="#">Иванова Елена Томовна</a></h2>
+							<strong class="doctor-profile">Акушер-гинеколог</strong>
+							<dl class="doctor-add-inf">
+								<dt>Район: </dt>
+									<dd>Новые Черемушки, Проспект Вернадского</dd>
+								<dt>Выезд на дом: </dt>
+									<dd>невозможен</dd>
+								<dt>Стоимость приема: </dt>
+									<dd><strong>2000 руб.</strong></dd>
+							</dl>
+							<p>Специалист по воспалительным заболеваниям органов малого таза, инфекциям, передающихся половым путем, патологии шейки матки, бесплодию. Ведет наблюдение за беременностью любого триместра, принимает роды любой сложности.</p>
+							<a href="#" class="btn js-appointment">Запись на прием</a>
+							<div class="doctor-grade">
+								<span class="doctor-exp">стаж 17 лет</span>
+								<div class="stars">
+									<div class="stars-active"></div>
+								</div>
+								<strong class="doctor-rating">
+									4<span>.6</span>
+								</strong>
+								<div class="question">
+									<span class="js-question">?</span>
+									<div class="hint">
+										<div class="hint-arr"></div>
+										<h2>Рейтинг врача</h2>
+										<p>Рейтинг врача сформирован на основании следующих показателей:</p>
+										<ul>
+											<li>образование;</li>
+											<li>опыт работы;</li>
+											<li>научная степень;</li>
+											<li>отзывы пациентов.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div href="#" class="complain">
+								<span class="complain-link">пожаловаться</span>
+								<div class="complain-drop">
+									<div class="complain-arr"></div>
+									<form action="#">
+										<ul>
+											<li><span class="complain-close">скрыть</span></li>
+											<li><a href="#">неверная цена</a></li>
+											<li><a href="#">неверный адрес</a></li>
+											<li><a href="#">врач не принимает</a></li>
+										</ul>
+										<textarea name="" id="" cols="30" rows="10" placeholder="другое"></textarea>
+										<input type="submit" class="btn" value="Отправить">
+									</form>
+								</div>
+							</div>
+
+						</div>
+						<!-- END .doctor-info -->
+					</li>
+
+				</ul>
+				<!-- END .search-result -->
+				<div class="pagi">
+					<a href="#" class="pagi-prev"><span class="arr"></span>предыдущая</a>
+					<ul>
+						<li class="is-active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#">8</a></li>
+						<li><a href="#">9</a></li>
+					</ul>
+					<a href="#" class="pagi-next"><span class="arr"></span>следующая</a>
+				</div>
+				<div class="text-block">
+					<h2>Часто задаваемые вопросы:</h2>
+					<h3>Возможно ли узнать рейтинг акушеров-гинеколов?</h3>
+					<p>Да, возможно. На нашем портале у каждого акушера-гинеколога свой рейтинг, который рассчитывается по специально разработанной системе DocDoc и учитывает множество важных профессиональных показателей.
+					</p>
+					<h3>Ищу акушера, посоветуйте кого-нибудь.</h3>
+					<p>Вы можете посмотреть отзывы пациентов о врачах-акушерах или акушерах-гинекологах и выбрать подходящего доктора. Также стоит обратить внимание на образование и опыт работы специалиста, указанные в анкете.</p>
+				</div>
+			</div>
+			<!-- BEGIN  .l-col2 -->
+		</div>
+	<!-- END .l -->
+</div>
+<!-- END .main
+	<!-- BEGIN .footer -->
+<div class="footer">
+	<div class="footer-left">
+		<p>OkDoc.ru – поиск врачей и клиник Харькова</p>
+		<p>Copyright © 2013 <a href="#">Карта сайта</a></p>
+	</div>
+	<div class="footer-right">
+		<p><a href="#">Регистрация врачей и клиник</a> <a href="#" id="js-entry">Вход в личный кабинет</a></p>
+		<p>Бесплатная регистрация и размещение анкет на портале</p>
+	</div>
+</div>
+<!-- END .footer -->
+	<div class="popup-wrap"></div>
+<!-- BEGIN .popup_appointment -->
+<div class="popup popup_appointment">
+	<a href="#" class="popup-close"></a>
+	<!-- BEGIN .appointment -->
+	<div class="appointment">
+		<h2 class="popup-title">Запишитесь на прием к этому врачу</h2>
+		<div class="phone"><i class="phone-ico"></i>+8 (057) <strong><span>565-333-0</span> или отправив заявку:</strong></div>
+		<dl class="doctor">
+			<dt>Врач:</dt>
+			<dd>Акушер-гинеколог</dd>
+			<dt>ФИО:</dt>
+			<dd>Дедова Галина Леонидовна</dd>
+		</dl>
+		<form action="#">
+			<div class="row">
+				<input type="text" placeholder="Ваше имя (обязательно)">
+			</div>
+			<div class="row">
+				<input type="text" placeholder="Ваш телефон (обязательно)">
+			</div>
+			<div class="row-radio">
+				<span>Врач для:</span>
+				<div class="radio">
+					<input type="radio" id="doc-1" name="doc">
+					<label for="doc-1">взрослого</label>
+				</div>
+				<div class="radio">
+					<input type="radio" id="doc-2" name="doc">
+					<label for="doc-2">ребенка</label>
+				</div>
+			</div>
+			<div class="row-textarea">
+				<textarea name="" id="" cols="30" rows="3" placeholder="Напишите комментарий"></textarea>
+			</div>
+			<div class="btn-holder">
+				<input type="submit" value="Записаться на прием" class="btn">
+			</div>
+		</form>
+	</div>
+	<!-- END .appointment -->
+	</form>
+</div>
+<!-- END .popup_doctors-type -->
+	<div class="popup-wrap"></div>
+<!-- BEGIN .popup_doctors-type -->
+<div class="popup popup_doctors-type">
+	<h2 class="popup-title">Все виды врачей</h2>
+	<a href="#" class="popup-close"></a>
+	<form action="#">
+		<ul class="choose-doctor" id="js-choose-doctor">
+			<li><input type="radio" name="doctor-type"id="doc-type1"><label for="doc-type1">Акушер-гинеколог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type2"><label for="doc-type2">Аллерголог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type3"><label for="doc-type3">Андролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type4"><label for="doc-type4">Венеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type5"><label for="doc-type5">Гастроэнтеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type6"><label for="doc-type6">Гематолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type7"><label for="doc-type7">Гепатолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type8"><label for="doc-type8">Гомеопат</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type9"><label for="doc-type9">Дерматолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type10"><label for="doc-type10">Диетолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type11"><label for="doc-type11">Иммунолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type12"><label for="doc-type12">Инфекционист</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type13"><label for="doc-type13">Кардиолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type14"><label for="doc-type14">Акушер-гинеколог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type15"><label for="doc-type15">Аллерголог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type16"><label for="doc-type16">Андролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type17"><label for="doc-type17">Венеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type18"><label for="doc-type18">Гастроэнтеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type19"><label for="doc-type19">Гематолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type20"><label for="doc-type20">Гепатолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type21"><label for="doc-type21">Гомеопат</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type22"><label for="doc-type22">Дерматолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type23"><label for="doc-type23">Диетолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type24"><label for="doc-type24">Иммунолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type25"><label for="doc-type25">Инфекционист</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type26"><label for="doc-type26">Кардиолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type27"><label for="doc-type27">Акушер-гинеколог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type28"><label for="doc-type28">Аллерголог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type29"><label for="doc-type29">Андролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type30"><label for="doc-type30">Венеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type31"><label for="doc-type31">Гастроэнтеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type32"><label for="doc-type32">Гематолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type33"><label for="doc-type33">Гепатолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type34"><label for="doc-type34">Гомеопат</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type35"><label for="doc-type35">Дерматолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type36"><label for="doc-type36">Диетолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type37"><label for="doc-type37">Иммунолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type38"><label for="doc-type38">Инфекционист</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type39"><label for="doc-type39">Кардиолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type40"><label for="doc-type40">Акушер-гинеколог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type41"><label for="doc-type41">Аллерголог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type42"><label for="doc-type42">Андролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type43"><label for="doc-type43">Венеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type44"><label for="doc-type44">Гастроэнтеролог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type45"><label for="doc-type45">Гематолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type46"><label for="doc-type46">Гепатолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type47"><label for="doc-type47">Гомеопат</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type48"><label for="doc-type48">Дерматолог</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type47"><label for="doc-type47">Гомеопат</label></li>
+			<li><input type="radio" name="doctor-type"id="doc-type48"><label for="doc-type48">Дерматолог</label></li>
+			<li class="btn-hold"></li>
+		</ul>
+		<input type="submit" value="Выбрать" class="btn">
+	</form>
+</div>
+<!-- END .popup_doctors-type -->
+	<!-- BEGIN .popup_metro -->
+<div class="popup popup_metro">
+	<h2 class="popup-title">Выберите удобную станцию метро</h2>
+	<a href="#" class="popup-close"></a>
+	<form action="#">
+		<div class="metro">
+			<img src="img/metro.png" alt="Схема Харьковского метрополитена">
+			<ul class="metro-station">
+				<li class="metro-kholodnaya-gora">
+					<input type="radio" name="metro-station" id="kholodnaya-gora">
+					<label for="kholodnaya-gora">Холодная гора<span class="pointer"></span></label>
+				</li>
+				<li class="metro-yuzhnyi-vokzal">
+					<input type="radio" name="metro-station" id="yuzhnyi-vokzal">
+					<label for="yuzhnyi-vokzal">Южный вокзал<span class="pointer"></span></label>
+				</li>
+				<li class="metro-tsentralnyi-rynok">
+					<input type="radio" name="metro-station" id="tsentralnyi-rynok">
+					<label for="tsentralnyi-rynok">Центральный рынок<span class="pointer"></span></label>
+				</li>
+				<li class="metro-sovetskaya">
+					<input type="radio" name="metro-station" id="sovetskaya">
+					<label for="sovetskaya">Советская<span class="pointer"></span></label>
+				</li>
+				<li class="metro-prospekt-gagarina">
+					<input type="radio" name="metro-station" id="prospekt-gagarina">
+					<label for="prospekt-gagarina">Проспект Гагарина<span class="pointer"></span></label>
+				</li>
+				<li class="metro-sportivnaya">
+					<input type="radio" name="metro-station" id="sportivnaya">
+					<label for="sportivnaya">Спортивная<span class="pointer"></span></label>
+				</li>
+				<li class="metro-malysheva">
+					<input type="radio" name="metro-station" id="malysheva">
+					<label for="malysheva">Завод имени Малышева<span class="pointer"></span></label>
+				</li>
+				<li class="metro-moskovskii-prospekt">
+					<input type="radio" name="metro-station" id="moskovskii-prospekt">
+					<label for="moskovskii-prospekt">Московский проспект<span class="pointer"></span></label>
+				</li>
+				<li class="metro-marshala-zhukova">
+					<input type="radio" name="metro-station" id="marshala-zhukova">
+					<label for="marshala-zhukova">Маршала Жукова<span class="pointer"></span></label>
+				</li>
+				<li class="metro-sovetskoi-armii">
+					<input type="radio" name="metro-station" id="sovetskoi-armii">
+					<label for="sovetskoi-armii">Советской Армии<span class="pointer"></span></label>
+				</li>
+				<li class="metro-maselskogo">
+					<input type="radio" name="metro-station" id="maselskogo">
+					<label for="maselskogo">Имени А. С. Масельского<span class="pointer"></span></label>
+				</li>
+				<li class="metro-traktornyi-zavod">
+					<input type="radio" name="metro-station" id="traktornyi-zavod">
+					<label for="traktornyi-zavod">Тракторный завод<span class="pointer"></span></label>
+				</li>
+				<li class="metro-proletarskaya">
+					<input type="radio" name="metro-station" id="proletarskaya">
+					<label for="proletarskaya">Пролетарская<span class="pointer"></span></label>
+				</li>
+
+
+				<li class="metro-geroev-truda">
+					<input type="radio" name="metro-station" id="geroev-truda">
+					<label for="geroev-truda">Героев труда<span class="pointer"></span></label>
+				</li>
+				<li class="metro-studencheskaya">
+					<input type="radio" name="metro-station" id="studencheskaya">
+					<label for="studencheskaya">Студенческая<span class="pointer"></span></label>
+				</li>
+				<li class="metro-akademika-pavlova">
+					<input type="radio" name="metro-station" id="akademika-pavlova">
+					<label for="akademika-pavlova">Академика Павлова<span class="pointer"></span></label>
+				</li>
+				<li class="metro-akademika-barabashova">
+					<input type="radio" name="metro-station" id="akademika-barabashova">
+					<label for="akademika-barabashova">Академика Барабашова<span class="pointer"></span></label>
+				</li>
+				<li class="metro-kievskaya">
+					<input type="radio" name="metro-station" id="kievskaya">
+					<label for="kievskaya">Киевская<span class="pointer"></span></label>
+				</li>
+				<li class="metro-pushkinskaya">
+					<input type="radio" name="metro-station" id="pushkinskaya">
+					<label for="pushkinskaya">Пушкинская<span class="pointer"></span></label>
+				</li>
+				<li class="metro-universitet">
+					<input type="radio" name="metro-station" id="universitet">
+					<label for="universitet">Университет<span class="pointer"></span></label>
+				</li>
+				<li class="metro-istoricheskii-muzei">
+					<input type="radio" name="metro-station" id="istoricheskii-muzei">
+					<label for="istoricheskii-muzei">Исторический музей<span class="pointer"></span></label>
+				</li>
+
+				<li class="metro-pr-pobedy">
+					<input type="radio" name="metro-station" id="pr-pobedy">
+					<label for="pr-pobedy">пр. Победы<span class="pointer"></span></label>
+				</li>
+				<li class="metro-alekseevskaya">
+					<input type="radio" name="metro-station" id="alekseevskaya">
+					<label for="alekseevskaya">Алексеевская<span class="pointer"></span></label>
+				</li>
+				<li class="metro-23-avgusta">
+					<input type="radio" name="metro-station" id="23-avgusta">
+					<label for="23-avgusta">23 Августа<span class="pointer"></span></label>
+				</li>
+				<li class="metro-botanicheskii-sad">
+					<input type="radio" name="metro-station" id="botanicheskii-sad">
+					<label for="botanicheskii-sad">Ботанический сад<span class="pointer"></span></label>
+				</li>
+				<li class="metro-nauchnaya">
+					<input type="radio" name="metro-station" id="nauchnaya">
+					<label for="nauchnaya">Научная<span class="pointer"></span></label>
+				</li>
+				<li class="metro-gosprom">
+					<input type="radio" name="metro-station" id="gosprom">
+					<label for="gosprom">Госпром<span class="pointer"></span></label>
+				</li>
+				<li class="metro-arkhitektora-beketova">
+					<input type="radio" name="metro-station" id="arkhitektora-beketova">
+					<label for="arkhitektora-beketova">Архитектора Бекетова<span class="pointer"></span></label>
+				</li>
+				<li class="metro-pl-vosstaniya">
+					<input type="radio" name="metro-station" id="pl-vosstaniya">
+					<label for="pl-vosstaniya">Площадь Восстания<span class="pointer"></span></label>
+				</li>
+				<li class="metro-metrost-im-vashchenko">
+					<input type="radio" name="metro-station" id="metrost-im-vashchenko">
+					<label for="metrost-im-vashchenko">Метростроителей имени Ващенко<span class="pointer"></span></label>
+				</li>
+			</ul>
+		</div>
+		<div class="btn-hold">
+			<input type="submit" value="Применить" class="btn btn_green">
+		</div>
+	</form>
+	
+
+</div>
+<!-- END .popup_metro -->
+</div>
+<!-- END .wrap-->
+
+</body>
+</html>
