@@ -944,6 +944,7 @@
 
 //text-info
 .text-info{
+	margin-right: 40px;
 	h1{
 		font-size: 24px;
 		color: #404040;
@@ -959,6 +960,7 @@
 	p{
 		margin: 14px 0;
 		line-height: 14px;
+		text-align: justify;
 		strong{
 			color: #229175;
 		}
@@ -1003,6 +1005,15 @@
 .text-info_blue{
 	h2, dl dt, a{
 		color: #315982;
+	}
+	h2{margin: 27px 0 22px;}
+	.list-articles{
+		p{
+			margin: 8px 0;
+			line-height: 16px;
+		}
+		dt{margin-bottom: 8px;}
+		dd{margin-bottom: 21px;}
 	}
 }
 .gray-list-box{
@@ -1054,14 +1065,22 @@
 	position: relative;
 	top: -4px;
 }
+.directory-title{
+	font-size: 24px;
+	color: #404040;
+	font-family: $comic;
+	margin:18px 0 16px;
+}
 .directory{
 	background: #f4f4f4;
 	border:1px solid #b6b6b6;
 	border-radius:6px;
-	padding: 0 20px;
+	padding: 10px 22px 14px;
+	margin-bottom: 27px;
+	margin-right: 40px;
 	ul{
 		@include column-count(3);
-		@include column-gap(17px);
+		@include column-gap(100px);
 		li{
 			font-size: 14px;
 			line-height: 36px;
@@ -1070,7 +1089,7 @@
 			padding-left: 20px;
 			background: url(../img/bullet-arr.png) no-repeat 0 15px;
 			a{
-				margin-right: 7px;
+				margin-right: 4px;
 				
 			}
 		}
