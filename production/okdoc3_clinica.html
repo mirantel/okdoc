@@ -1,0 +1,226 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<!--[if lte IE 9]>
+		<script src="js/jquery.placeholderpatch.js"></script>
+		<script src="js/jquery.columnizer.js"></script>
+		<script src="js/common_ie.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- BEGIN  .wrap-->
+<div class="wrap">
+	<!-- BEGIN .header -->
+<div class="header">
+	<div class="logo-hold">
+		<strong class="logo">Сервис по поиску врачей OkDok<a href="#"></a></strong>
+		<strong class="slogan-1">Мы отобрали для вас <br> лучших специалистов!</strong>
+		<strong class="slogan-2">Выберите специалиста <br> и запишитесь на прием!</strong>
+	</div>
+	<div class="contact-hold">
+		<div class="contact-city">
+			<div class="city-select">
+				<span>Харьков</span>
+				<span class="arr"></span>
+			</div>
+			<ul class="city-list">
+				<li>Киев</li>
+				<li>Днепропетровск</li>
+				<li>Донецк</li>
+			</ul>
+		</div>
+		<strong class="question-slogan">
+			<span class="blue">Ищете хорошего врача?</span>
+			<span class="green">Нужны рекомендации?</span>
+		</strong>
+		<strong class="contact-slogan">Поручите нам подбор врача!</strong>
+		<a href="#" class="contact-mail" id="js-request"><span class="mail-ico"></span>Отправить заявку на подбор врача</a>
+		<div class="contact-phone">
+			<strong><span class="phone-ico"></span>Позвоните</strong>
+			<ul>
+				<li>+8 (057) 565-33-03</li>
+				<li>+8 (057) 565-33-03</li>
+				<li>+8 (057) 565-33-03</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END .header -->
+	<!-- BEGIN .main -->
+<div class="main">
+	<div class="edit-tabs">
+		<ul class="edit-tabs-nav">
+			<li class="is-active">АНКЕТА КЛИНИКИ</li>
+			<li>АНКЕТА ВРАЧА</li>
+			<li>Система</li>
+		</ul>
+		<!-- BEGIN .edit-tabs-content -->
+		<div class="edit-tabs-content">
+			<!-- BEGIN .clinic-prof -->
+			<div class="clinic-prof">
+				<ul class="clinic-prof-nav">
+					<li class="is-active">Информация о клинике</li>
+					<li>Адрес, учетные данные</li>
+					<li>Описание</li>
+					<li>Врачи, расписание</li>
+				</ul>
+				<div class="clinic-prof-content">
+					<!-- BEGIN .clinic-info -->
+					<div class="clinic-info">
+						<div class="col1">
+							<label for="">Логотип:</label>
+							<div class="clinic-logo"></div>
+							<div class="clinic-add-foto">
+								<span>Добавить фото</span>
+								<input type="file">
+							</div>
+							<div class="clinic-rating"></div>
+						</div>
+						<!-- BEGIN .col2 -->
+						<div class="col2">
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell">
+									<label for="">E-mail: *</label>
+									<input type="text" class="input" placeholder="inna@mail.ru">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell">
+									<label for="">Пароль: *</label>
+									<input type="password"  class="input">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell">
+									<label for="">Название: *</label>
+									<input type="text" class="input" placeholder="Клиника">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell">
+									<label for="">Телефон: *</label>
+									<input type="text" class="input" placeholder="inna@mail.ru">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell">
+									<label for="">Телефон: *</label>
+									<input type="text" class="input">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell">
+									<label for="">Телефон: *</label>
+									<input type="text" class="input" placeholder="Клиника">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div>
+									<label for="#">График работы: *</label>
+								</div>
+								<div class="cell">
+									<label for="">Будни: *</label>
+									с
+									<div class="select">
+										<select name="" id="">
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+										<ul class="select-drop">
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+									до
+									<div class="select">
+										<select name="" id="">
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+										<ul class="select-drop">
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+								<div class="cell">
+									<label for="">Выходные: *</label>
+									с
+									<div class="select">
+										<select name="" id="">
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+										<ul class="select-drop">
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+									до
+									<div class="select">
+										<select name="" id="">
+											<option value=""></option>
+											<option value=""></option>
+										</select>
+										<ul class="select-drop">
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- END .row -->
+						</div>
+						<!-- END .col2 -->
+					</div>
+					<!-- END .clinic-info -->
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<!-- END .clinic-prof -->
+			<div></div>
+			<div></div>
+
+		</div>
+		<!-- END .edit-tabs-content -->
+	</div>
+</div>
+<!-- END .main
+	<!-- BEGIN .footer -->
+<div class="footer">
+	<div class="footer-left">
+		<p>OkDoc.ru – поиск врачей и клиник Харькова</p>
+		<p>Copyright © 2013 <a href="#">Карта сайта</a></p>
+	</div>
+	<div class="footer-right">
+		<p><a href="#">Регистрация врачей и клиник</a> <a href="#" id="js-entry">Вход в личный кабинет</a></p>
+		<p>Бесплатная регистрация и размещение анкет на портале</p>
+	</div>
+</div>
+<!-- END .footer -->
+</div>
+<!-- END .wrap-->
+
+</body>
+</html>
