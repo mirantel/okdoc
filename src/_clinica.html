@@ -32,19 +32,19 @@
 						<div class="col2">
 							<!-- BEGIN .row -->
 							<div class="row">
-								<div class="cell">
+								<div class="cell verif-ok">
 									<label for="">E-mail: *</label>
 									<input type="text" class="input" placeholder="inna@mail.ru">
 									<span class="state-ok"></span>
 									<span class="state-error"></span>
 								</div>
-								<div class="cell">
+								<div class="cell verif-ok">
 									<label for="">Пароль: *</label>
 									<input type="password"  class="input">
 									<span class="state-ok"></span>
 									<span class="state-error"></span>
 								</div>
-								<div class="cell">
+								<div class="cell verif-error">
 									<label for="">Название: *</label>
 									<input type="text" class="input" placeholder="Клиника">
 									<span class="state-ok"></span>
@@ -55,21 +55,21 @@
 
 							<!-- BEGIN .row -->
 							<div class="row">
-								<div class="cell">
+								<div class="cell verif-error">
 									<label for="">Телефон: *</label>
-									<input type="text" class="input" placeholder="inna@mail.ru">
+									<input type="text" class="input" placeholder="+380509568585">
 									<span class="state-ok"></span>
 									<span class="state-error"></span>
 								</div>
-								<div class="cell">
+								<div class="cell verif-error">
 									<label for="">Телефон: *</label>
-									<input type="text" class="input">
+									<input type="text" class="input" placeholder="+380509568585">
 									<span class="state-ok"></span>
 									<span class="state-error"></span>
 								</div>
-								<div class="cell">
+								<div class="cell verif-error">
 									<label for="">Телефон: *</label>
-									<input type="text" class="input" placeholder="Клиника">
+									<input type="text" class="input" placeholder="+380509568585">
 									<span class="state-ok"></span>
 									<span class="state-error"></span>
 								</div>
@@ -81,58 +81,101 @@
 								<div>
 									<label for="#">График работы: *</label>
 								</div>
-								<div class="cell">
+								<div class="cell verif-error">
 									<label for="">Будни: *</label>
-									с
-									<div class="select">
-										<select name="" id="">
-											<option value=""></option>
-											<option value=""></option>
-										</select>
-										<ul class="select-drop">
-											<li></li>
-											<li></li>
-										</ul>
+									<div class="select-group">
+										с
+										<div class="select js-select">
+											<input type="text" placeholder="08:00">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>08:00</li>
+													<li>09:00</li>
+													<li>10:00</li>
+													<li>11:00</li>
+													<li>12:00</li>
+													<li>13:00</li>
+													<li>14:00</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:00</li>
+												</ul>
+											</div>
+										</div>
+										до
+										<div class="select js-select">
+											<input type="text" placeholder="08:00">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>08:00</li>
+													<li>09:00</li>
+													<li>10:00</li>
+													<li>11:00</li>
+													<li>12:00</li>
+													<li>13:00</li>
+													<li>14:00</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:00</li>
+												</ul>
+											</div>
+										</div>
 									</div>
-									до
-									<div class="select">
-										<select name="" id="">
-											<option value=""></option>
-											<option value=""></option>
-										</select>
-										<ul class="select-drop">
-											<li></li>
-											<li></li>
-										</ul>
-									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
 								</div>
-								<div class="cell">
+								<div class="cell verif-error">
 									<label for="">Выходные: *</label>
-									с
-									<div class="select">
-										<select name="" id="">
-											<option value=""></option>
-											<option value=""></option>
-										</select>
-										<ul class="select-drop">
-											<li></li>
-											<li></li>
-										</ul>
+									<div class="select-group">
+										с
+										<div class="select js-select">
+											<input type="text" placeholder="08:00">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>08:00</li>
+													<li>09:00</li>
+													<li>10:00</li>
+													<li>11:00</li>
+													<li>12:00</li>
+													<li>13:00</li>
+													<li>14:00</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:00</li>
+												</ul>
+											</div>
+										</div>
+										до
+										<div class="select js-select">
+											<input type="text" placeholder="08:00">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>08:00</li>
+													<li>09:00</li>
+													<li>10:00</li>
+													<li>11:00</li>
+													<li>12:00</li>
+													<li>13:00</li>
+													<li>14:00</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:00</li>
+												</ul>
+											</div>
+										</div>
 									</div>
-									до
-									<div class="select">
-										<select name="" id="">
-											<option value=""></option>
-											<option value=""></option>
-										</select>
-										<ul class="select-drop">
-											<li></li>
-											<li></li>
-										</ul>
-									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
 								</div>
 							</div>
 							<!-- END .row -->
+							<div class="btn-row">
+								<input type="submit" class="btn btn_green" value="Сохранить">
+							</div>
 						</div>
 						<!-- END .col2 -->
 					</div>

@@ -73,18 +73,29 @@
 		overflow: hidden;
 		margin-bottom: 31px;
 	}
+	.btn-row{
+		text-align: right;
+	}
 	.state-ok{
 		position: absolute;
 		bottom: 12px;
 		right: 10px;
+		display: none;
 		@include sized-sprite($icons, 'ok');
 	}
 	.state-error{
 		bottom: 10px;
 		right: 10px;
 		position: absolute;
+		display: none;
 		@include sized-sprite($icons, 'error');
 	}
+}
+.verif-error{
+	.state-error{display: block;}
+}
+.verif-ok{
+	.state-ok{display: block;}
 }
 
 //clinic-prof
@@ -132,4 +143,20 @@
 //clinic-info
 .clinic-info{
 	overflow: hidden;
+}
+.select-group{
+	white-space: nowrap;
+}
+.select{
+	display: inline-block;
+	input{
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 16px;
+		height: 37px;
+		padding: 0 10px;
+		width: 90px;
+	}
+	.select-drop{
+		display: none;
+	}
 }
