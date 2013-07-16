@@ -1,5 +1,5 @@
 					<!-- BEGIN .clinic-address -->
-					<div class="clinic-address" style="display: none;">
+					<div class="clinic-address"  style="display: none;">
 						<!-- BEGIN .row -->
 						<div class="row">
 							<div class="cell verif-ok">
@@ -30,12 +30,85 @@
 								<span class="state-ok"></span>
 								<span class="state-error"></span>
 							</div>
-							<div class="cell verif-error">
+							<div class="cell verif-ok">
 								<label for="">Район: *</label>
-								<input type="text" class="input" placeholder="Клиника">
+								<div class="select js-select">
+									<input type="text" placeholder="Ленинский">
+									<div class="select-drop js-scroll">
+										<ul>
+											<li>Ленинский</li>
+											<li>Ленинский2</li>
+										</ul>
+									</div>
+								</div>
 								<span class="state-ok"></span>
 								<span class="state-error"></span>
 							</div>
+						</div>
+						<!-- END .row -->
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell verif-ok">
+								<label for="">Улица: *</label>
+								<input type="text" class="input" placeholder="Ленина">
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+							<div class="cell verif-ok">
+								<div class="select-list-item">
+									<label for="">Дом: *</label>
+									<div class="select select_tiny js-select">
+										<input type="text" placeholder="159">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>156</li>
+												<li>157</li>
+												<li>158</li>
+												<li>159</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="select-list-item">
+									<label for="">Корпус: *</label>
+									<div class="select select_tiny js-select">
+										<input type="text" placeholder="2">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>1</li>
+												<li>2</li>
+												<li>3</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="select-list-item">
+									<label for="">Кабинет: *</label>
+									<div class="select select_tiny js-select">
+										<input type="text" placeholder="58">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>57</li>
+												<li>56</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_map verif-ok">
+								<div class="map">
+									<img src="img/map.jpg" alt="">
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+							<input type="submit" class="btn btn_green" value="Сохранить">
 						</div>
 						<!-- END .row -->
 					</div>
