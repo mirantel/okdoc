@@ -388,12 +388,12 @@
 
 .popup_entry{
 	width: 707px - 30px;
-	padding: 24px 0 0 30px;
+	padding: 24px 0 64px 30px;
 	margin: -136px 0 0 -353px;
-	height: 248px;
-			background: #fff url("../img/doctor4.jpg") no-repeat 353px 17px;
+	min-height: 248px - 64px;
+	background: #fff url("../img/doctor4.jpg") no-repeat 353px 17px;
 	.entry-form{
-		padding: 16px 0 0;
+		padding: 16px 0 20px;
 		width: 300px;
 	}
 	input[type="text"]{
@@ -418,7 +418,7 @@
 		left: 30px;
 		position: absolute;
 		text-align: center;
-		top: 207px;
+		bottom:33px;
 		width: 286px;
 	}
 	.btn{

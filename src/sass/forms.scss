@@ -1,6 +1,6 @@
 @import "lib/base";
 .edit-tabs{
-	margin: -4px -2px 0;
+	margin: -4px -2px 18px;
 }
 .edit-tabs-nav{
 	overflow: hidden;
@@ -61,7 +61,7 @@
 		float: left;
 	}
 	.col1{
-		width: 237px;
+		width: 200px ;
 	}
 	.cell{
 		float: left;
@@ -90,6 +90,12 @@
 		display: none;
 		@include sized-sprite($icons, 'error');
 	}
+	.btn{
+		height: 33px;
+		font-size: 18px;
+		padding: 0;
+		width: 151px;
+	}
 }
 .verif-error{
 	.state-error{display: block;}
@@ -98,9 +104,13 @@
 	.state-ok{display: block;}
 }
 
+.clinic-prof-content{
+	padding-left: 37px;
+}
 //clinic-prof
 .clinic-prof{
 	padding: 22px 0 0;
+	
 }
 .clinic-prof-nav{
 	overflow: hidden;
@@ -140,15 +150,17 @@
 	}
 }
 
-//clinic-info
-.clinic-info{
-	overflow: hidden;
-}
+
 .select-group{
 	white-space: nowrap;
+	padding: 0 0 0 6px;
+	font-size: 14px;
+	.select{
+		display: inline-block;
+		margin: 0 5px;
+	}
 }
 .select{
-	display: inline-block;
 	position: relative;
 	&:after{
 		content:"";
@@ -157,15 +169,72 @@
 		position: absolute;
 		top: 15px;
 		right: 12px;
+		cursor: pointer;
 	}
 	input{
 		font-family: Arial,Helvetica,sans-serif;
 		font-size: 16px;
 		height: 37px;
-		padding: 0 10px;
-		width: 90px;
+		cursor: pointer;
 	}
 	.select-drop{
 		display: none;
 	}
+}
+.select_mid{
+	width: auto;
+}
+.select_small{
+	input{
+		padding: 0 28px 0 8px;
+		width: 110px - 8px - 28px;
+		text-align: center;
+	}
+}
+.select_tiny{
+	width: auto
+}
+
+//clinic-info
+.clinic-info{
+	overflow: hidden;
+	.btn-row{
+		margin: -7px 60px 17px 0;
+	}
+	.row-graph{
+		margin: 0 0 14px;
+	}
+}
+.clinic-add-logo{
+	iframe{
+		border:0;
+		overflow: hidden;
+	}
+}
+.clinic-add-foto{
+	text-align: center;
+	span{
+		cursor: pointer;
+		text-decoration: underline;
+		font-size: 14px;
+		color: #696969;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	input{display: none;}
+}
+.clinic-rating{
+	display: inline-block;
+	margin: 0 0 0 -2px;
+	padding: 10px 0 0;
+	span{
+		display: inline-block;
+		margin: 5px 0 0 7px;
+	}
+}
+
+//clinic-address
+.clinic-address{
+	width: auto;
 }

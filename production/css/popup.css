@@ -91,14 +91,14 @@
 .popup_appointment .doctor dt { float: left; margin-right: 6px; }
 .popup_appointment .doctor dd { margin-bottom: 6px; }
 
-.popup_entry { width: 677px; padding: 24px 0 0 30px; margin: -136px 0 0 -353px; height: 248px; background: white url("../img/doctor4.jpg") no-repeat 353px 17px; }
-.popup_entry .entry-form { padding: 16px 0 0; width: 300px; }
+.popup_entry { width: 677px; padding: 24px 0 64px 30px; margin: -136px 0 0 -353px; min-height: 184px; background: white url("../img/doctor4.jpg") no-repeat 353px 17px; }
+.popup_entry .entry-form { padding: 16px 0 20px; width: 300px; }
 .popup_entry input[type="text"] { font-size: 12px; height: 31px; padding: 0 11px; width: 265px; }
 .popup_entry .row { margin-bottom: 8px; }
 .popup_entry .row-text { margin-top: 15px; }
 .popup_entry .check { display: inline-block; margin-left: 27px; }
 .popup_entry .check input { vertical-align: middle; margin-right: 8px; }
-.popup_entry .btn-hold { left: 30px; position: absolute; text-align: center; top: 207px; width: 286px; }
+.popup_entry .btn-hold { left: 30px; position: absolute; text-align: center; bottom: 33px; width: 286px; }
 .popup_entry .btn { height: 31px; width: 111px; padding: 0; margin: 0 2px; line-height: 31px; vertical-align: middle; }
 .popup_entry div.btn { height: 29px; line-height: 29px; display: inline-block; }
 .popup_entry .entry-text { position: absolute; left: 487px; line-height: 18px; top: 94px; font-size: 12.5px; }

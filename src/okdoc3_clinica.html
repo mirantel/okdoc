@@ -19,7 +19,40 @@
 <!-- BEGIN  .wrap-->
 <div class="wrap">
 	@@include('_header.html')
-	@@include('_clinica.html')
+	<!-- BEGIN .main -->
+	<div class="main">
+		<div class="edit-tabs">
+			<ul class="edit-tabs-nav">
+				<li class="is-active">АНКЕТА КЛИНИКИ</li>
+				<li>АНКЕТА ВРАЧА</li>
+				<li>Система</li>
+			</ul>
+			<!-- BEGIN .edit-tabs-content -->
+			<div class="edit-tabs-content">
+				<!-- BEGIN .clinic-prof -->
+				<div class="clinic-prof">
+					<ul class="clinic-prof-nav">
+						<li class="is-active">Информация о клинике</li>
+						<li>Адрес, учетные данные</li>
+						<li>Описание</li>
+						<li>Врачи, расписание</li>
+					</ul>
+					<div class="clinic-prof-content">
+						@@include('_clinic-info.html')
+						@@include('_clinic-address.html')
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<!-- END .clinic-prof -->
+				<div></div>
+				<div></div>
+
+			</div>
+			<!-- END .edit-tabs-content -->
+		</div>
+	</div>
+	<!-- END .main -->
 	@@include('_footer.html')
 </div>
 <!-- END .wrap-->

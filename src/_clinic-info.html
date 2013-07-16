@@ -1,32 +1,16 @@
-<!-- BEGIN .main -->
-<div class="main">
-	<div class="edit-tabs">
-		<ul class="edit-tabs-nav">
-			<li class="is-active">АНКЕТА КЛИНИКИ</li>
-			<li>АНКЕТА ВРАЧА</li>
-			<li>Система</li>
-		</ul>
-		<!-- BEGIN .edit-tabs-content -->
-		<div class="edit-tabs-content">
-			<!-- BEGIN .clinic-prof -->
-			<div class="clinic-prof">
-				<ul class="clinic-prof-nav">
-					<li class="is-active">Информация о клинике</li>
-					<li>Адрес, учетные данные</li>
-					<li>Описание</li>
-					<li>Врачи, расписание</li>
-				</ul>
-				<div class="clinic-prof-content">
 					<!-- BEGIN .clinic-info -->
 					<div class="clinic-info">
 						<div class="col1">
 							<label for="">Логотип:</label>
-							<div class="clinic-logo"></div>
-							<div class="clinic-add-foto">
-								<span>Добавить фото</span>
-								<input type="file">
+							<div class="clinic-add-logo">
+								<iframe src="clinic-logo.html" width="156" height="225"></iframe>
 							</div>
-							<div class="clinic-rating"></div>
+							<div class="clinic-rating">
+								<div class="stars">
+									<div class="stars-active"></div>
+								</div>
+								<span>Рейтинг: 0</span> <a href="#">?</a>
+							</div>
 						</div>
 						<!-- BEGIN .col2 -->
 						<div class="col2">
@@ -78,14 +62,14 @@
 
 							<!-- BEGIN .row -->
 							<div class="row">
-								<div>
+								<div class="row-graph">
 									<label for="#">График работы: *</label>
 								</div>
 								<div class="cell verif-error">
 									<label for="">Будни: *</label>
 									<div class="select-group">
 										с
-										<div class="select js-select">
+										<div class="select select_small js-select">
 											<input type="text" placeholder="08:00">
 											<div class="select-drop js-scroll">
 												<ul>
@@ -104,7 +88,7 @@
 											</div>
 										</div>
 										до
-										<div class="select js-select">
+										<div class="select select_small js-select">
 											<input type="text" placeholder="08:00">
 											<div class="select-drop js-scroll">
 												<ul>
@@ -130,7 +114,7 @@
 									<label for="">Выходные: *</label>
 									<div class="select-group">
 										с
-										<div class="select js-select">
+										<div class="select select_small js-select">
 											<input type="text" placeholder="08:00">
 											<div class="select-drop js-scroll">
 												<ul>
@@ -149,7 +133,7 @@
 											</div>
 										</div>
 										до
-										<div class="select js-select">
+										<div class="select select_small js-select">
 											<input type="text" placeholder="08:00">
 											<div class="select-drop js-scroll">
 												<ul>
@@ -180,17 +164,3 @@
 						<!-- END .col2 -->
 					</div>
 					<!-- END .clinic-info -->
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-			</div>
-			<!-- END .clinic-prof -->
-			<div></div>
-			<div></div>
-
-		</div>
-		<!-- END .edit-tabs-content -->
-	</div>
-</div>
-<!-- END .main

@@ -89,10 +89,12 @@
 .search-show-all { border-top: 1px solid #b6b6b6; line-height: 55px; }
 .search-show-all a { font-size: 12.5px; color: #c1c1c1; }
 
+.stars { float: left; background: url('../img/icons-s77144b1b5f.png') 0 -547px no-repeat; width: 110px; height: 19px; }
+.stars .stars-active { background: url('../img/icons-s77144b1b5f.png') 0 -299px no-repeat; width: 110px; height: 19px; width: 90%; }
+
 .doctor-grade { position: absolute; right: 0; top: -11px; }
 .doctor-grade .doctor-exp { font-size: 12px; color: #404040; float: left; margin-top: 16px; }
-.doctor-grade .stars { float: left; margin: 10px 0 0 5px; background: url('../img/icons-s77144b1b5f.png') 0 -547px no-repeat; width: 110px; height: 19px; }
-.doctor-grade .stars .stars-active { background: url('../img/icons-s77144b1b5f.png') 0 -299px no-repeat; width: 110px; height: 19px; width: 90%; }
+.doctor-grade .stars { margin: 10px 0 0 5px; }
 .doctor-grade .doctor-rating { float: left; color: #179072; font-size: 30px; margin: 0 0 0 13px; }
 .doctor-grade .doctor-rating span { font-size: 20px; }
 .doctor-grade .question { color: #179072; font-size: 12.5px; position: relative; top: -4px; margin-left: 5px; display: inline-block; }

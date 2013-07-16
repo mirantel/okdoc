@@ -393,7 +393,14 @@
 		color: #c1c1c1;
 	}
 }
-
+.stars{
+	float: left;
+	@include sized-sprite($icons, 'stars_white');
+	.stars-active{
+		@include sized-sprite($icons, 'stars');
+		width: 90%;
+	}
+}
 .doctor-grade{
 	position: absolute;
 	right: 0;
@@ -405,13 +412,7 @@
 		margin-top: 16px;
 	}
 	.stars{
-		float: left;
 		margin: 10px 0 0 5px;
-		@include sized-sprite($icons, 'stars_white');
-		.stars-active{
-			@include sized-sprite($icons, 'stars');
-			width: 90%;
-		}
 	}
 	.doctor-rating{
 		float: left;
