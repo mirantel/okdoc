@@ -47,40 +47,36 @@
 .select { position: relative; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
 .select:after { content: ""; border: 6px solid #999; border-color: #999 transparent transparent; position: absolute; top: 15px; right: 12px; cursor: pointer; }
 .select input { font-family: Arial,Helvetica,sans-serif; font-size: 16px; height: 37px; cursor: pointer; width: 140px; padding: 0 28px 0 15px; color: #000; }
-.select .select-drop { display: none; position: absolute; top: 30px; left: 0; right: 0; max-height: 150px; background: #fff; border-radius: 0 0 4px 4px; overflow: auto; outline: none; border: 1px solid #b6b6b6; border-top: 0; z-index: 5; }
-.select .select-drop ul { padding: 0 3px; }
-.select .select-drop li { padding: 4px 13px; color: #000; font-size: 16px; cursor: pointer; border-top: 1px solid #b6b6b6; position: relative; list-style: none; }
-.select .select-drop li:hover { margin: 0 -3px; padding: 4px 16px; background: #109e75; color: #fff; box-shadow: 0 1px 0 0 #b6b6b6; }
+.select .select-drop { display: none; position: absolute; top: 36px; left: 0; right: 0; max-height: 150px; background: #fff; border-radius: 0 0 4px 4px; overflow: auto; outline: none; border: 1px solid #b6b6b6; border-top: 0; z-index: 5; }
+.select .select-drop li { padding: 4px 16px; color: #000; font-size: 16px; cursor: pointer; border-top: 1px solid #b6b6b6; position: relative; list-style: none; }
+.select .select-drop li:hover { background: #109e75; color: #fff; box-shadow: 0 1px 0 0 #b6b6b6; }
 
 .jspContainer { overflow: hidden; position: relative; }
 
 .jspPane { position: absolute; }
 
-.jspVerticalBar { position: absolute; top: 0; right: 8px; width: 5px; height: 100%; }
+.jspVerticalBar { position: absolute; top: 0; right: 0; width: 30px; height: 100%; }
 
-.jspTrack { background: none; position: relative; }
+.jspTrack { background: #b6b6b6; position: relative; }
 
-.jspDrag { background: #505050; position: relative; top: 0; left: 0; border-radius: 2px; cursor: pointer; }
-
-.jspVerticalBar .jspArrow:focus { outline: none; }
-
-.jspVerticalBar .jspArrow { height: 20px; }
-
-.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag { float: left; height: 100%; }
+.jspDrag { background: #109e75; position: relative; top: 0; left: 0; cursor: pointer; }
 
 .jspArrow { background: none; text-indent: -20000px; display: block; cursor: pointer; }
 
-.jspArrow.jspDisabled { cursor: default; background: none; }
+.jspArrow.jspDisabled { cursor: default; }
+.jspArrow.jspDisabled:before, .jspArrow.jspDisabled:after { cursor: default; }
 
-.jspVerticalBar .jspArrow { height: 7px; }
+.jspVerticalBar .jspArrow:focus { outline: none; }
 
-.jspVerticalBar .jspArrow:focus { outline: none; float: left; height: 100%; }
+.jspVerticalBar .jspArrow { height: 20px; background: #999; }
+.jspVerticalBar .jspArrow:before, .jspVerticalBar .jspArrow:after { border: 6px solid #fff; position: absolute; right: 9px; content: ""; cursor: pointer; }
+.jspVerticalBar .jspArrow:before { border-color: transparent transparent #fff; top: 0; }
+.jspVerticalBar .jspArrow:after { border-color: #fff transparent transparent; bottom: 0; }
 
 .select_mid { width: auto; }
 
 .select_small input { padding: 0 28px 0 8px; width: 74px; text-align: center; }
 .select_small .select-drop li { padding: 4px 24px 4px 13px; text-align: center; }
-.select_small .select-drop li:hover { padding-right: 27px; }
 
 .select_tiny input { padding: 0 28px 0 8px; width: 45px; text-align: center; }
 

@@ -131,7 +131,8 @@ $('.js-select span, .js-select input').click(function() {
 		$(this).next().show();
 		$(this).next().jScrollPane({
 			showArrows : true,
-			autoReinitialise : true
+			autoReinitialise : false,
+			verticalGutter: 0
 		});
 	};
 });
@@ -151,5 +152,7 @@ $('.js-select').find('li').click(function() {
 });
 
 
-
+{
+			
+		}
 });

@@ -220,7 +220,7 @@
 	.select-drop{
 		display: none;
 		position: absolute;
-		top: 30px;
+		top: 36px;
 		left: 0;
 		right: 0;
 		max-height: 150px;
@@ -232,10 +232,9 @@
 		border-top:0;
 		z-index: 5;
 		ul{
-			padding: 0 3px;
 		}
 		li{
-			padding: 4px 13px;
+			padding: 4px 15px;
 			color: #000;
 			font-size: 16px;
 			cursor: pointer;
@@ -243,8 +242,6 @@
 			position: relative;
 			list-style: none;
 			&:hover{
-				margin: 0 -3px;
-				padding: 4px 16px;
 				background: #109e75;
 				color: #fff;
 				box-shadow:0 1px 0 0 #b6b6b6;
@@ -263,32 +260,20 @@
 .jspVerticalBar{
 	position: absolute;
 	top: 0;
-	right: 8px;
-	width: 5px;
+	right: 0;
+	width: 30px;
 	height: 100%;
 }
 .jspTrack{
-	background: none;
+	background: #b6b6b6;
 	position: relative;
 }
 .jspDrag{
-	background: #505050;
+	background: #109e75;
 	position: relative;
 	top: 0;
 	left: 0;
-	border-radius: 2px;
 	cursor: pointer;
-}
-.jspVerticalBar .jspArrow:focus{
-	outline: none;
-}
-.jspVerticalBar .jspArrow{
-	height: 20px;
-}
-.jspHorizontalBar .jspTrack,
-.jspHorizontalBar .jspDrag{
-	float: left;
-	height: 100%;
 }
 .jspArrow{
 	background: none;
@@ -298,16 +283,45 @@
 }
 .jspArrow.jspDisabled{
 	cursor: default;
-	background: none;
-}
-.jspVerticalBar .jspArrow{
-	height: 7px;
+	&:before, &:after{
+		cursor: default;
+	}
 }
 .jspVerticalBar .jspArrow:focus{
 	outline: none;
-	float: left;
-	height: 100%;
 }
+.jspVerticalBar .jspArrow{
+	height: 20px;
+	background: #999;
+	&:before, &:after{
+		border:6px solid #fff;
+		position: absolute;
+		right: 9px;
+		content:"";
+		cursor: pointer;
+	}
+	&:before{
+		border-color:transparent transparent #fff;
+		top: 0;
+	}
+	&:after{
+		border-color:#fff transparent transparent;
+		bottom: 0;
+	}
+}
+//.jspHorizontalBar .jspTrack,
+//.jspHorizontalBar .jspDrag{
+//	float: left;
+//	height: 100%;
+//}
+
+//.jspVerticalBar .jspArrow:focus{
+//	outline: none;
+//	float: left;
+//	height: 100%;
+//}
+
+
 .select_mid{
 	width: auto;
 }
@@ -322,7 +336,6 @@
 			padding: 4px 24px 4px 13px;
 			text-align: center;
 			&:hover{
-				padding-right: 27px;
 			}
 		}
 	}
