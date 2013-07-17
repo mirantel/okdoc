@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.jscrollpane.min.js"></script>
 	<script src="js/common.js"></script>
 	<!--[if lte IE 9]>
 		<script src="js/jquery.placeholderpatch.js"></script>
@@ -74,7 +75,7 @@
 					</ul>
 					<div class="clinic-prof-content">
 											<!-- BEGIN .clinic-info -->
-					<div class="clinic-info" style="display: none;">
+					<div class="clinic-info js-clinic-tab">
 						<div class="col1">
 							<label for="">Логотип:</label>
 							<div class="clinic-add-logo">
@@ -240,7 +241,7 @@
 					</div>
 					<!-- END .clinic-info -->
 											<!-- BEGIN .clinic-address -->
-					<div class="clinic-address"  style="display: none;">
+					<div class="clinic-address  js-clinic-tab" style="display: none;">
 						<!-- BEGIN .row -->
 						<div class="row">
 							<div class="cell verif-ok">
@@ -296,44 +297,17 @@
 								<span class="state-error"></span>
 							</div>
 							<div class="cell verif-ok">
-								<div class="select-list-item">
+								<div class="cell-list-item">
 									<label for="">Дом: *</label>
-									<div class="select select_tiny js-select">
-										<input type="text" placeholder="159">
-										<div class="select-drop js-scroll">
-											<ul>
-												<li>156</li>
-												<li>157</li>
-												<li>158</li>
-												<li>159</li>
-											</ul>
-										</div>
-									</div>
+									<input type="text" placeholder="159" class="input input_tiny">
 								</div>
-								<div class="select-list-item">
+								<div class="cell-list-item">
 									<label for="">Корпус: *</label>
-									<div class="select select_tiny js-select">
-										<input type="text" placeholder="2">
-										<div class="select-drop js-scroll">
-											<ul>
-												<li>1</li>
-												<li>2</li>
-												<li>3</li>
-											</ul>
-										</div>
-									</div>
+									<input type="text" placeholder="1" class="input input_tiny">
 								</div>
-								<div class="select-list-item">
+								<div class="cell-list-item">
 									<label for="">Кабинет: *</label>
-									<div class="select select_tiny js-select">
-										<input type="text" placeholder="58">
-										<div class="select-drop js-scroll">
-											<ul>
-												<li>57</li>
-												<li>56</li>
-											</ul>
-										</div>
-									</div>
+									<input type="text" placeholder="58" class="input input_tiny">
 								</div>
 								<span class="state-ok"></span>
 								<span class="state-error"></span>
@@ -355,7 +329,7 @@
 					</div>
 					<!-- END .clinic-address -->
 											<!-- BEGIN .clinic-description -->
-					<div class="clinic-description">
+					<div class="clinic-description js-clinic-tab" style="display: none;">
 							<!-- BEGIN .row -->
 							<div class="row">
 								<div class="cell verif-ok">

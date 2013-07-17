@@ -23,7 +23,7 @@
 		cursor: pointer;
 		background: #0c926e no-repeat;
 		@include background-image(linear-gradient(#00c78d, rgba(0,199,141,.0)));
-		@include transition-property(background);
+		@include transition-property(background-position);
 		@include transition-duration(0.2s);
 		&:hover{
 			background-position: 0 -23px;
@@ -58,11 +58,22 @@
 		font-family: Arial,Helvetica,sans-serif;
 		color: #000;
 	}
+	.input_small{
+		width: 110px - 20px;
+		text-align: center;
+	}
+	.input_tiny{
+		width: 81px - 20px;
+		text-align: center;
+	}
 	.col1,.col2{
 		float: left;
 	}
 	.col1{
 		width: 200px ;
+	}
+	.col2{
+		width: 714px;
 	}
 	.cell{
 		float: left;
@@ -71,7 +82,11 @@
 		margin-right: 16px;
 	}
 	.row{
-		overflow: hidden;
+		//overflow: hidden;
+		display: inline-block;
+		width: 100%;
+		font-size: 0;
+		vertical-align: top;
 		margin-bottom: 31px;
 	}
 	.btn-row{
@@ -151,16 +166,24 @@
 		background: #2f557d;
 		background-repeat: no-repeat;
 		@include background-image(linear-gradient(#5e92c9, rgba(94,146,201,.0)));
-		@include transition-property(background);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
 		&:hover{
 			background-position: 0 -36px;
+			@include transition-property(background-position);
+			@include transition-duration(0.2s);
+			@include transition-timing-function(ease-in);
 		}
 	}
 }
 
+.cell-list-item{
+	float: left;
+	margin-left: 18px;
+	&:first-child{
+		margin: 0;
+	}
+}
 
+// select
 .select-group{
 	white-space: nowrap;
 	padding: 0 0 0 6px;
@@ -170,15 +193,12 @@
 		margin: 0 5px;
 	}
 }
-.select-list-item{
-	float: left;
-	margin-left: 18px;
-	&:first-child{
-		margin: 0;
-	}
-}
+
 .select{
 	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	&:after{
 		content:"";
 		border:6px solid #999;
@@ -199,7 +219,94 @@
 	}
 	.select-drop{
 		display: none;
+		position: absolute;
+		top: 30px;
+		left: 0;
+		right: 0;
+		max-height: 150px;
+		background:#fff;
+		border-radius: 0 0 4px 4px;
+		overflow: auto;
+		outline: none;
+		border: 1px solid #b6b6b6;
+		border-top:0;
+		z-index: 5;
+		ul{
+			padding: 0 3px;
+		}
+		li{
+			padding: 4px 13px;
+			color: #000;
+			font-size: 16px;
+			cursor: pointer;
+			border-top:1px solid #b6b6b6;
+			position: relative;
+			list-style: none;
+			&:hover{
+				margin: 0 -3px;
+				padding: 4px 16px;
+				background: #109e75;
+				color: #fff;
+				box-shadow:0 1px 0 0 #b6b6b6;
+			}
+		}
 	}
+}
+//scroll
+.jspContainer{
+	overflow: hidden;
+	position: relative;
+}
+.jspPane{
+	position: absolute;
+}
+.jspVerticalBar{
+	position: absolute;
+	top: 0;
+	right: 8px;
+	width: 5px;
+	height: 100%;
+}
+.jspTrack{
+	background: none;
+	position: relative;
+}
+.jspDrag{
+	background: #505050;
+	position: relative;
+	top: 0;
+	left: 0;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.jspVerticalBar .jspArrow:focus{
+	outline: none;
+}
+.jspVerticalBar .jspArrow{
+	height: 20px;
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag{
+	float: left;
+	height: 100%;
+}
+.jspArrow{
+	background: none;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+.jspArrow.jspDisabled{
+	cursor: default;
+	background: none;
+}
+.jspVerticalBar .jspArrow{
+	height: 7px;
+}
+.jspVerticalBar .jspArrow:focus{
+	outline: none;
+	float: left;
+	height: 100%;
 }
 .select_mid{
 	width: auto;
@@ -210,6 +317,15 @@
 		width: 110px - 8px - 28px;
 		text-align: center;
 	}
+	.select-drop{
+		li{
+			padding: 4px 24px 4px 13px;
+			text-align: center;
+			&:hover{
+				padding-right: 27px;
+			}
+		}
+	}
 }
 .select_tiny{
 	input{
@@ -219,9 +335,15 @@
 	}
 }
 
+
+
+
 //clinic-info
 .clinic-info{
-	overflow: hidden;
+	//overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
 	.btn-row{
 		margin: -7px 60px 17px 0;
 	}

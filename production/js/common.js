@@ -5,6 +5,7 @@ jQuery.fn.exists = function() {
 	return $(this).length;
 }
 
+
 $('.search-tabs-nav li').click(function(){
 	if (!($(this).hasClass('is-active'))) $(this).addClass('is-active').siblings().removeClass('is-active')
 		.parents().find('.search-block').eq($(this).index()).fadeIn(150).siblings('.search-block').hide();
@@ -109,5 +110,46 @@ if ($('#js-back').exists()){
 		return false;
 	});
 };
+
+// form-tabs
+$('.clinic-prof-nav li').click(function(){
+	if (!($(this).hasClass('is-active'))) $(this).addClass('is-active').siblings().removeClass('is-active')
+		.parents('.clinic-prof').find('.js-clinic-tab').eq($(this).index()).fadeIn(150).siblings('.js-clinic-tab').hide();
+	return false;
+});
+
+//select
+$('.js-select span, .js-select input').click(function() {
+	if ($(this).parent().hasClass('is-open')) {
+		$(this).parent().removeClass('is-open')
+		$(this).next().hide();
+	}
+	else {
+		$('.js-select').removeClass('is-open');
+		$('.js-scroll').hide();
+		$(this).parent().addClass('is-open');
+		$(this).next().show();
+		$(this).next().jScrollPane({
+			showArrows : true,
+			autoReinitialise : true
+		});
+	};
+});
+$(document).click(function() {
+	$('.js-select').removeClass('is-open');
+	$('.js-scroll').hide();
+});
+$('.js-select').click(function(event){
+    event.stopPropagation();
+});
+$('.js-select').find('li').click(function() {
+	var val = $(this).text();
+	$(this).parent().parent().parent().parent().prev().html(val);
+	$(this).parent().parent().parent().parent().prev().val(val);
+	$(this).parent().parent().parent().parent().hide();
+	$(this).parent().parent().parent().parent().parent().removeClass('is-open');
+});
+
+
 
 });
