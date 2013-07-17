@@ -152,7 +152,4 @@ $('.js-select').find('li').click(function() {
 });
 
 
-{
-			
-		}
 });

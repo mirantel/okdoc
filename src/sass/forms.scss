@@ -150,6 +150,7 @@
 		padding: 0 12px;
 		cursor: pointer;
 		margin: 0 0 0 93px;
+		border:1px solid transparent;
 		&:first-child{
 			margin-left: 29px;
 		}
@@ -161,7 +162,7 @@
 		text-decoration: none;
 		color: #fff;
 		line-height: 31px;
-		border:1px solid #154578;
+		border-color:#154578;
 		border-radius:3px;
 		background: #2f557d;
 		background-repeat: no-repeat;
@@ -309,17 +310,6 @@
 		bottom: 0;
 	}
 }
-//.jspHorizontalBar .jspTrack,
-//.jspHorizontalBar .jspDrag{
-//	float: left;
-//	height: 100%;
-//}
-
-//.jspVerticalBar .jspArrow:focus{
-//	outline: none;
-//	float: left;
-//	height: 100%;
-//}
 
 
 .select_mid{
@@ -333,10 +323,8 @@
 	}
 	.select-drop{
 		li{
-			padding: 4px 24px 4px 13px;
+			padding: 4px 2px 4px 13px;
 			text-align: center;
-			&:hover{
-			}
 		}
 	}
 }
