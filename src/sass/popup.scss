@@ -448,3 +448,28 @@
 		}
 	}
 }
+
+.popup_access{
+	width: 442px - 28px - 28px;
+	margin-top: -131px;
+	margin-left: -221px;
+	min-height: 272px - 24px;
+	padding: 24px 28px 0;
+	background: url("../img/doctor4.jpg") no-repeat 273px 17px white;
+	.popup-title{
+		color: #c40b21;
+		margin-left: -1px;
+		margin-bottom: 19px;
+		span{
+			display: block;
+			color: #404040;
+			font-size: 18px;
+			margin-top: 23px;
+		}
+	}
+	.access-text{
+		font-size: 12.5px;
+		line-height: 18.5px;
+		padding: 0 0 0 3px;
+	}
+}
