@@ -126,6 +126,8 @@ input[type="radio"] + label{
 	&:hover{
 		background-position: 0 -36px;
 	}
+}a.btn{
+	display: inline-block;
 }
 .btn_green{
 	border-color: #13624b;

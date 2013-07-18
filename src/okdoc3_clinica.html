@@ -31,7 +31,7 @@
 			<!-- BEGIN .edit-tabs-content -->
 			<div class="edit-tabs-content">
 				<!-- BEGIN .clinic-prof -->
-				<div class="clinic-prof">
+				<div class="clinic-prof js-edit-tab">
 					<ul class="clinic-prof-nav">
 						<li class="is-active">Информация о клинике</li>
 						<li>Адрес, учетные данные</li>
@@ -46,8 +46,27 @@
 					</div>
 				</div>
 				<!-- END .clinic-prof -->
-				<div></div>
-				<div></div>
+
+				<!-- BEGIN .doctor-form -->
+				<div class="doctor-form  js-edit-tab" style="display: none;">
+					<ul class="doctor-form-nav">
+						<li class="is-active">Личная информация</li>
+						<li>Ваши контакты</li>
+						<li>Образование и специализация</li>
+						<li>Дневник врача</li>
+						<li><span>Как видят мою<br> страницу пациенты</span></li>
+					</ul>
+					<div class="doctor-form-content">
+						
+					</div>
+				</div>
+				<!-- END .doctor-form -->
+
+				<!-- BEGIN .system-settings -->
+				<div class="system-settings  js-edit-tab" style="display: none;">
+					
+				</div>
+				<!-- END .system-settings -->
 
 			</div>
 			<!-- END .edit-tabs-content -->
@@ -57,6 +76,5 @@
 	@@include('_footer.html')
 </div>
 <!-- END .wrap-->
-
 </body>
 </html>

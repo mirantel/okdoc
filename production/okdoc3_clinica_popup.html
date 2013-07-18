@@ -66,7 +66,7 @@
 			<!-- BEGIN .edit-tabs-content -->
 			<div class="edit-tabs-content">
 				<!-- BEGIN .clinic-prof -->
-				<div class="clinic-prof">
+				<div class="clinic-prof js-edit-tab">
 					<ul class="clinic-prof-nav">
 						<li class="is-active">Информация о клинике</li>
 						<li>Адрес, учетные данные</li>
@@ -345,41 +345,226 @@
 							</div>
 					</div>
 					<!-- END .clinic-description -->
-											<!-- BEGIN .clinic-doctor -->
-					<div class="clinic-doctor js-clinic-tab" style="display: none;">
-							<!-- BEGIN .row -->
-							<div class="row">
-								<div class="cell verif-ok">
-									<label for="">E-mail: *</label>
-									<input type="text" class="input" placeholder="inna@mail.ru">
-									<span class="state-ok"></span>
-									<span class="state-error"></span>
-								</div>
-								<div class="cell verif-ok">
-									<label for="">Пароль: *</label>
-									<input type="password"  class="input">
-									<span class="state-ok"></span>
-									<span class="state-error"></span>
-								</div>
-								<div class="cell verif-error">
-									<label for="">Название: *</label>
-									<input type="text" class="input" placeholder="Клиника">
-									<span class="state-ok"></span>
-									<span class="state-error"></span>
-								</div>
+											<!-- BEGIN .clinic-doctors -->
+					<div class="clinic-doctors js-clinic-tab" style="display: none;">
+						<!-- BEGIN .row -->
+						<div class="row row-top">
+							<div class="cell">
+								<label for="">Список врачей:</label>
+								<a href="#" class="btn btn_green">Добавить врача</a>
 							</div>
-							<!-- END .row -->
-							<div class="btn-row">
-								<input type="submit" class="btn btn_green" value="Сохранить">
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row  verif-ok">
+							<!-- BEGIN .clinic-doctor -->
+							<div class="clinic-doctor">
+								<!-- BEGIN .left-col -->
+								<div class="left-col">
+									<div class="doctor-photo">
+										<a href="#"><img src="img/photo-01.jpg" alt=""></a>
+									</div>
+									<div class="doctor-reviews">
+										<span>отзывов:</span>
+										<span class="num">5</span>
+									</div>
+								</div>
+								<!-- END .left-col -->
+
+								<!-- BEGIN .doctor-info -->
+								<div class="doctor-info">
+									<h2 class="doctor-name"><a href="#">Иванова Елена Томовна</a></h2>
+									<strong class="doctor-profile">Акушер-гинеколог</strong>
+									<dl class="doctor-add-inf">
+										<dt>Район: </dt>
+											<dd>Новые Черемушки, Проспект Вернадского</dd>
+										<dt>Выезд на дом: </dt>
+											<dd>невозможен</dd>
+										<dt>Стоимость приема: </dt>
+											<dd><strong>2000 руб.</strong></dd>
+									</dl>
+									<p>Специалист по воспалительным заболеваниям органов малого таза, инфекциям, передающихся половым путем, патологии шейки матки, бесплодию. Ведет наблюдение за беременностью любого триместра, принимает роды любой сложности.</p>
+									<div class="doctor-grade">
+										<span class="doctor-exp">стаж 17 лет</span>
+										<div class="stars">
+											<div class="stars-active"></div>
+										</div>
+										<strong class="doctor-rating">
+											4<span>.6</span>
+										</strong>
+										<div class="question">
+											<span class="js-question">?</span>
+											<div class="hint">
+												<div class="hint-arr"></div>
+												<h2>Рейтинг врача</h2>
+												<p>Рейтинг врача сформирован на основании следующих показателей:</p>
+												<ul>
+													<li>образование;</li>
+													<li>опыт работы;</li>
+													<li>научная степень;</li>
+													<li>отзывы пациентов.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="doctor-edit-btn">
+										<a href="#" class="btn btn_green">Удалить врача</a>
+										<a href="#" class="btn btn_green">Редактировать</a>
+										<a href="#" class="btn btn_green">Включить</a>
+									</div>
+								</div>
+								<!-- END .doctor-info -->
 							</div>
+							<!-- END .clinic-doctor -->
+							<span class="state-ok"></span>
+							<span class="state-error"></span>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row  verif-ok">
+							<!-- BEGIN .clinic-doctor -->
+							<div class="clinic-doctor">
+								<!-- BEGIN .left-col -->
+								<div class="left-col">
+									<div class="doctor-photo">
+										<a href="#"><img src="img/photo-01.jpg" alt=""></a>
+									</div>
+									<div class="doctor-reviews">
+										<span>отзывов:</span>
+										<span class="num">5</span>
+									</div>
+								</div>
+								<!-- END .left-col -->
+
+								<!-- BEGIN .doctor-info -->
+								<div class="doctor-info">
+									<h2 class="doctor-name"><a href="#">Иванова Елена Томовна</a></h2>
+									<strong class="doctor-profile">Акушер-гинеколог</strong>
+									<dl class="doctor-add-inf">
+										<dt>Район: </dt>
+											<dd>Новые Черемушки, Проспект Вернадского</dd>
+										<dt>Выезд на дом: </dt>
+											<dd>невозможен</dd>
+										<dt>Стоимость приема: </dt>
+											<dd><strong>2000 руб.</strong></dd>
+									</dl>
+									<p>Специалист по воспалительным заболеваниям органов малого таза, инфекциям, передающихся половым путем, патологии шейки матки, бесплодию. Ведет наблюдение за беременностью любого триместра, принимает роды любой сложности.</p>
+									<div class="doctor-grade">
+										<span class="doctor-exp">стаж 17 лет</span>
+										<div class="stars">
+											<div class="stars-active"></div>
+										</div>
+										<strong class="doctor-rating">
+											4<span>.6</span>
+										</strong>
+										<div class="question">
+											<span class="js-question">?</span>
+											<div class="hint">
+												<div class="hint-arr"></div>
+												<h2>Рейтинг врача</h2>
+												<p>Рейтинг врача сформирован на основании следующих показателей:</p>
+												<ul>
+													<li>образование;</li>
+													<li>опыт работы;</li>
+													<li>научная степень;</li>
+													<li>отзывы пациентов.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="doctor-edit-btn">
+										<a href="#" class="btn btn_green">Удалить врача</a>
+										<a href="#" class="btn btn_green">Редактировать</a>
+										<a href="#" class="btn btn_green">Включить</a>
+									</div>
+								</div>
+								<!-- END .doctor-info -->
+							</div>
+							<!-- END .clinic-doctor -->
+							<span class="state-ok"></span>
+							<span class="state-error"></span>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row  verif-ok">
+							<!-- BEGIN .clinic-doctor -->
+							<div class="clinic-doctor">
+								<!-- BEGIN .left-col -->
+								<div class="left-col">
+									<div class="doctor-photo">
+										<a href="#"><img src="img/photo-01.jpg" alt=""></a>
+									</div>
+									<div class="doctor-reviews">
+										<span>отзывов:</span>
+										<span class="num">5</span>
+									</div>
+								</div>
+								<!-- END .left-col -->
+
+								<!-- BEGIN .doctor-info -->
+								<div class="doctor-info">
+									<h2 class="doctor-name"><a href="#">Иванова Елена Томовна</a></h2>
+									<strong class="doctor-profile">Акушер-гинеколог</strong>
+									<dl class="doctor-add-inf">
+										<dt>Район: </dt>
+											<dd>Новые Черемушки, Проспект Вернадского</dd>
+										<dt>Выезд на дом: </dt>
+											<dd>невозможен</dd>
+										<dt>Стоимость приема: </dt>
+											<dd><strong>2000 руб.</strong></dd>
+									</dl>
+									<p>Специалист по воспалительным заболеваниям органов малого таза, инфекциям, передающихся половым путем, патологии шейки матки, бесплодию. Ведет наблюдение за беременностью любого триместра, принимает роды любой сложности.</p>
+									<div class="doctor-grade">
+										<span class="doctor-exp">стаж 17 лет</span>
+										<div class="stars">
+											<div class="stars-active"></div>
+										</div>
+										<strong class="doctor-rating">
+											4<span>.6</span>
+										</strong>
+										<div class="question">
+											<span class="js-question">?</span>
+											<div class="hint">
+												<div class="hint-arr"></div>
+												<h2>Рейтинг врача</h2>
+												<p>Рейтинг врача сформирован на основании следующих показателей:</p>
+												<ul>
+													<li>образование;</li>
+													<li>опыт работы;</li>
+													<li>научная степень;</li>
+													<li>отзывы пациентов.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="doctor-edit-btn">
+										<a href="#" class="btn btn_green">Удалить врача</a>
+										<a href="#" class="btn btn_green">Редактировать</a>
+										<a href="#" class="btn btn_green">Включить</a>
+									</div>
+								</div>
+								<!-- END .doctor-info -->
+							</div>
+							<!-- END .clinic-doctor -->
+							<span class="state-ok"></span>
+							<span class="state-error"></span>
+						</div>
+						<!-- END .row -->
+
+						<div class="btn-row">
+							<input type="submit" class="btn btn_green" value="Сохранить">
+						</div>
 					</div>
-					<!-- END .clinic-doctor -->
+					<!-- END .clinic-doctors -->
 					</div>
 				</div>
 				<!-- END .clinic-prof -->
-				<div></div>
-				<div></div>
 
+				<div></div>
+				<div></div>
 			</div>
 			<!-- END .edit-tabs-content -->
 		</div>

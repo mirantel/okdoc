@@ -112,6 +112,11 @@ if ($('#js-back').exists()){
 };
 
 // form-tabs
+$('.edit-tabs-nav li').click(function(){
+	if (!($(this).hasClass('is-active'))) $(this).addClass('is-active').siblings().removeClass('is-active')
+		.parents('.edit-tabs').find('.js-edit-tab').eq($(this).index()).fadeIn(150).siblings('.js-edit-tab').hide();
+	return false;
+});
 $('.clinic-prof-nav li').click(function(){
 	if (!($(this).hasClass('is-active'))) $(this).addClass('is-active').siblings().removeClass('is-active')
 		.parents('.clinic-prof').find('.js-clinic-tab').eq($(this).index()).fadeIn(150).siblings('.js-clinic-tab').hide();

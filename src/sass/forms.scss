@@ -80,6 +80,7 @@
 		position: relative;
 		padding-right: 37px;
 		margin-right: 16px;
+		font-size: 12px;
 	}
 	.row{
 		//overflow: hidden;
@@ -137,7 +138,7 @@
 .clinic-prof{
 	padding: 22px 0 0;
 }
-.clinic-prof-nav{
+.clinic-prof-nav, .doctor-form-nav{
 	overflow: hidden;
 	margin-bottom: 26px;
 	li{
@@ -161,7 +162,6 @@
 	.is-active{
 		text-decoration: none;
 		color: #fff;
-		line-height: 31px;
 		border-color:#154578;
 		border-radius:3px;
 		background: #2f557d;
@@ -418,4 +418,79 @@
 		top:28px;
 	}
 	.row{margin-bottom: 15px;}
+}
+// clinic-doctors
+.clinic-doctors{
+	.row{
+		position: relative;
+		margin-bottom: 19px;
+	}
+	.state-ok,.state-error{
+		top: 4px;
+		right: 24px;
+		bottom: auto;
+	}
+	.btn-row{
+		margin: 12px 30px 25px 0;
+	}
+	.row-top{
+		margin-bottom: 15px;
+		label{
+			margin-bottom: 13px;
+		}
+		.btn{
+			line-height: 33px;
+			padding: 0 9px;
+			width: auto;
+		}
+	}
+}
+.clinic-doctor{
+	list-style: none;
+	display: inline-block;
+	border: 1px solid #b6b6b6;
+	padding: 32px 38px 21px 42px;
+	background: #fff;
+	border-radius:4px;
+	font-size: 12px;
+	.left-col{
+		float: left;
+		width: 130px;
+		margin-right: 15px;
+	}
+	.btn{
+		height: 31px;
+		margin-left: 12px;
+		padding: 0 10px;
+		width: auto;
+		line-height: 31px;
+	}
+	.doctor-edit-btn{
+		margin-top: 20px;
+		padding-right: 3px;
+		text-align: right;
+	}
+}
+
+
+//
+.doctor-form{
+	padding-top: 22px;
+}
+.doctor-form-nav{
+	li{
+		margin: 0 0 0 30px;
+		padding: 0 5px;
+		line-height: 25px;
+		&:first-child{
+			margin-left: 36px;
+		}
+		span{
+			line-height: 18px;
+			position: relative;
+			text-align: center;
+			top: -3px;
+			display: block;
+		}
+	}
 }
