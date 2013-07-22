@@ -8,6 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.jscrollpane.min.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/common.js"></script>
 	<!--[if lte IE 9]>
 		<script src="js/jquery.placeholderpatch.js"></script>
@@ -563,20 +564,800 @@
 				</div>
 				<!-- END .clinic-prof -->
 
-				<!-- BEGIN .doctor-form -->
-				<div class="doctor-form  js-edit-tab" style="display: none;">
-					<ul class="doctor-form-nav">
+				<!-- BEGIN .medico -->
+				<div class="medico js-edit-tab" style="display: none;">
+					<ul class="medico-nav">
 						<li class="is-active">Личная информация</li>
 						<li>Ваши контакты</li>
 						<li>Образование и специализация</li>
 						<li>Дневник врача</li>
 						<li><span>Как видят мою<br> страницу пациенты</span></li>
 					</ul>
-					<div class="doctor-form-content">
+					<div class="medico-content">
+											<!-- BEGIN .medico-personal -->
+					<div class="medico-personal js-doctor-tab">
+						<div class="col1">
+							<label for="">Ваше фото:</label>
+							<div class="doctor-add-photo">
+								<iframe src="doctor-photo.html" width="156" height="225"></iframe>
+							</div>
+							<div class="doctor-rating">
+								<div class="stars">
+									<div class="stars-active"></div>
+								</div>
+								<span>Рейтинг: 0</span> <a href="#">?</a>
+							</div>
+						</div>
+						<!-- BEGIN .col2 -->
+						<div class="col2">
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell verif-ok">
+									<label for="">E-mail: *</label>
+									<input type="text" class="input" placeholder="inna@mail.ru">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell verif-ok">
+									<label for="">Пароль: *</label>
+									<input type="password"  class="input">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell cell_check verif-error">
+									<span class="check-label">Пол:</span>
+									<div class="check">
+										<input type="checkbox" id="sex-f">
+										<label for="sex-f">М</label>
+									</div>
+									<div class="check">
+										<input type="checkbox" id="sex-m">
+										<label for="sex-m">Ж</label>
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell verif-error">
+									<label for="">Имя: *</label>
+									<input type="text" class="input" placeholder="+380509568585">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell verif-error">
+									<label for="">Отчество: *</label>
+									<input type="text" class="input" placeholder="+380509568585">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell verif-error">
+									<label for="">Фамилия: *</label>
+									<input type="text" class="input" placeholder="+380509568585">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell verif-error">
+									<label for="">Дата рождения: *</label>
+									<div class="select-group-mid">
+										<div class="select select_mid js-select">
+											<input type="text" placeholder="14">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>01</li>
+													<li>02</li>
+													<li>03</li>
+													<li>04</li>
+													<li>05</li>
+													<li>06</li>
+													<li>07</li>
+													<li>08</li>
+													<li>09</li>
+													<li>10</li>
+													<li>11</li>
+													<li>12</li>
+													<li>13</li>
+													<li>14</li>
+													<li>15</li>
+													<li>16</li>
+													<li>17</li>
+													<li>18</li>
+													<li>19</li>
+													<li>20</li>
+													<li>21</li>
+													<li>22</li>
+													<li>23</li>
+													<li>24</li>
+													<li>25</li>
+													<li>26</li>
+													<li>27</li>
+													<li>28</li>
+													<li>29</li>
+													<li>30</li>
+													<li>31</li>
+												</ul>
+											</div>
+										</div>
+										<div class="select select_mid js-select">
+											<input type="text" placeholder="01">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>01</li>
+													<li>02</li>
+													<li>03</li>
+													<li>04</li>
+													<li>05</li>
+													<li>06</li>
+													<li>07</li>
+													<li>08</li>
+													<li>09</li>
+													<li>10</li>
+													<li>11</li>
+													<li>12</li>
+												</ul>
+											</div>
+										</div>
+										<div class="select select_mid js-select">
+											<input type="text" placeholder="1961">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>1960</li>
+													<li>1961</li>
+													<li>1962</li>
+													<li>1963</li>
+													<li>1964</li>
+													<li>1965</li>
+													<li>1966</li>
+													<li>1967</li>
+													<li>1968</li>
+													<li>1969</li>
+													<li>1970</li>
+													<li>1971</li>
+													<li>1972</li>
+													<li>1973</li>
+													<li>1974</li>
+													<li>1975</li>
+													<li>1976</li>
+													<li>1977</li>
+													<li>1978</li>
+													<li>1979</li>
+													<li>1980</li>
+													<li>1981</li>
+													<li>1982</li>
+													<li>1983</li>
+													<li>1984</li>
+													<li>1985</li>
+													<li>1986</li>
+													<li>1987</li>
+													<li>1988</li>
+													<li>1989</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell-btn">
+									<input type="submit" class="btn btn_green" value="Сохранить">
+								</div>
+							</div>
+							<!-- END .row -->
+						</div>
+						<!-- END .col2 -->
+					</div>
+					<!-- END .medico-personal -->
+											<!-- BEGIN .medico-contacts -->
+					<div class="medico-contacts js-doctor-tab" style="display: none;">
+						<!-- BEGIN .col1 -->
+						<div class="col1">
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell verif-ok">
+									<label for="">Город: *</label>
+									<div class="select js-select">
+										<input type="text" placeholder="Харьков">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>Харьков</li>
+												<li>Киев</li>
+											</ul>
+										</div>
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell verif-ok">
+									<label for="">Станция метро: *</label>
+									<div class="select js-select">
+										<input type="text" placeholder="Университет">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>Харьков</li>
+												<li>Киев</li>
+											</ul>
+										</div>
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell verif-ok">
+									<label for="">Улица: *</label>
+									<input type="text" class="input" placeholder="Ленина">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell verif-ok">
+									<div class="cell-list-item">
+										<label for="">Дом: *</label>
+										<input type="text" placeholder="159" class="input input_tiny">
+									</div>
+									<div class="cell-list-item">
+										<label for="">Корпус: *</label>
+										<input type="text" placeholder="1" class="input input_tiny">
+									</div>
+									<div class="cell-list-item">
+										<label for="">Кабинет: *</label>
+										<input type="text" placeholder="58" class="input input_tiny">
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell verif-ok">
+									<label for="">Район приема: *</label>
+									<div class="select js-select">
+										<input type="text" placeholder="Ленинский">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>Ленинский</li>
+												<li>Ленинский2</li>
+											</ul>
+										</div>
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+								<div class="cell verif-ok">
+									<label for="">Район выезда: *</label>
+									<div class="select js-select">
+										<input type="text" placeholder="Ленинский">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>Ленинский</li>
+												<li>Ленинский2</li>
+											</ul>
+										</div>
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+						</div>
+						<!-- END .col1 -->
+
+						<!-- BEGIN .col2 -->
+						<div class="col2">
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell cell_check verif-error">
+									<span class="check-label">Выезд на дом: *</span>
+									<div class="check">
+										<input type="checkbox" id="sex-f">
+										<label for="sex-f">да</label>
+									</div>
+									<div class="check">
+										<input type="checkbox" id="sex-m">
+										<label for="sex-m">нет</label>
+									</div>
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell verif-ok">
+									<label for="">Телефон: *</label>
+									<input type="text" class="input" placeholder="+30502565698">
+									<span class="state-ok"></span>
+									<span class="state-error"></span>
+								</div>
+							</div>
+							<!-- END .row -->
+
+							<!-- BEGIN .row -->
+							<div class="row">
+								<div class="cell-btn">
+									<input type="submit" class="btn btn_green" value="Сохранить">
+								</div>
+							</div>
+							<!-- END .row -->
+						</div>
+						<!-- END .col2 -->
+
 						
 					</div>
+					<!-- END .medico-contacts -->
+											<!-- BEGIN .medico-education -->
+					<div class="medico-education js-doctor-tab"  style="display: none;">
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell verif-ok">
+								<label for="">Специальность: *</label>
+								<input type="text" class="input" placeholder="Дерматолог">
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+							<div class="cell verif-error">
+								<label for="">Стаж работы: *</label>
+								<div class="select-group-tiny">
+									<div class="select select_tiny js-select">
+											<input type="text" placeholder="15">
+											<div class="select-drop js-scroll">
+												<ul>
+													<li>00</li>
+													<li>01</li>
+													<li>02</li>
+													<li>03</li>
+													<li>04</li>
+													<li>05</li>
+													<li>06</li>
+													<li>07</li>
+													<li>08</li>
+													<li>09</li>
+													<li>10</li>
+													<li>11</li>
+													<li>12</li>
+													<li>13</li>
+													<li>14</li>
+													<li>15</li>
+													<li>16</li>
+													<li>17</li>
+													<li>18</li>
+													<li>19</li>
+													<li>20</li>
+												</ul>
+											</div>
+										</div>
+									<div class="select select_tiny js-select">
+										<input type="text" placeholder="лет">
+										<div class="select-drop js-scroll">
+											<ul>
+												<li>часов</li>
+												<li>дней</li>
+												<li>месяцев</li>
+												<li>лет</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+
+							<div class="cell verif-ok">
+								<label for="">Врач категории: *</label>
+								<div class="select js-select">
+									<input type="text" placeholder="высшей">
+									<div class="select-drop js-scroll">
+										<ul>
+											<li>низшей категории</li>
+											<li>высшей категории</li>
+										</ul>
+									</div>
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_textarea verif-error">
+								<label for="">Обо мне: *</label>
+								<textarea rows="10" cols="30" id="" name="">Специализируется на лечении хламидиоза, уреа- и микоплазмоза, герпеса, бородавок, кондилом, дерматита, псориаза и других дерматовенерологических болезней. Автор 6 опубликованных статей.</textarea>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_textarea verif-error">
+								<label for="">Специализация: *</label>
+								<textarea rows="10" cols="30" id="" name="">Специализируется на лечении хламидиоза, уреа- и микоплазмоза, герпеса, бородавок, кондилом, дерматита, псориаза и других дерматовенерологических болезней. Автор 6 опубликованных статей.</textarea>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_textarea verif-error">
+								<label for="">Перечислите какие заболевания вы диагностируете и лечите: *</label>
+								<textarea rows="10" cols="30" id="" name="">Специализируется на лечении хламидиоза, уреа- и микоплазмоза, герпеса, бородавок, кондилом, дерматита, псориаза и других дерматовенерологических болезней. Автор 6 опубликованных статей.</textarea>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_textarea verif-error">
+								<label for="">Образование: *</label>
+								<textarea rows="10" cols="30" id="" name="">Специализируется на лечении хламидиоза, уреа- и микоплазмоза, герпеса, бородавок, кондилом, дерматита, псориаза и других дерматовенерологических болезней. Автор 6 опубликованных статей.</textarea>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_textarea verif-error">
+								<label for="">Курсы: *</label>
+								<textarea rows="10" cols="30" id="" name="">Специализируется на лечении хламидиоза, уреа- и микоплазмоза, герпеса, бородавок, кондилом, дерматита, псориаза и других дерматовенерологических болезней. Автор 6 опубликованных статей.</textarea>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_textarea verif-error">
+								<label for="">Член ассоциаций: *</label>
+								<textarea rows="10" cols="30" id="" name="">Специализируется на лечении хламидиоза, уреа- и микоплазмоза, герпеса, бородавок, кондилом, дерматита, псориаза и других дерматовенерологических болезней. Автор 6 опубликованных статей.</textarea>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell cell_textarea verif-error">
+								<label for="">Опыт работы: *</label>
+								<textarea rows="10" cols="30" id="" name="">Специализируется на лечении хламидиоза, уреа- и микоплазмоза, герпеса, бородавок, кондилом, дерматита, псориаза и других дерматовенерологических болезней. Автор 6 опубликованных статей.</textarea>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .btn-row -->
+						<div class="btn-row">
+							<input type="submit" class="btn btn_green" value="Сохранить">
+						</div>
+						<!-- END .btn-row -->
+					</div>
+					<!-- END .medico-education -->
+											<!-- BEGIN .medico-diary -->
+					<div class="medico-diary js-doctor-tab" style="display: none;">
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell verif-error">
+								<label for="">Часы приема: *</label>
+								<div class="select-group">
+									с
+									<div class="select select_small js-select">
+										<input type="text" placeholder="08:00">
+										<div class="select-drop js-scroll" style="display: none;">
+											<ul>
+												<li>08:00</li>
+												<li>09:00</li>
+												<li>10:00</li>
+												<li>11:00</li>
+												<li>12:00</li>
+												<li>13:00</li>
+												<li>14:00</li>
+												<li>15:00</li>
+												<li>16:00</li>
+												<li>17:00</li>
+												<li>18:00</li>
+											</ul>
+										</div>
+									</div>
+									до
+									<div class="select select_small js-select">
+										<input type="text" placeholder="08:00">
+										<div class="select-drop js-scroll" style="display: none;">
+											<ul>
+												<li>08:00</li>
+												<li>09:00</li>
+												<li>10:00</li>
+												<li>11:00</li>
+												<li>12:00</li>
+												<li>13:00</li>
+												<li>14:00</li>
+												<li>15:00</li>
+												<li>16:00</li>
+												<li>17:00</li>
+												<li>18:00</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+
+							<div class="cell verif-ok">
+								<label for="">Временной интервал: *</label>
+								<div class="select select_center js-select ">
+									<input type="text" placeholder="1 час">
+									<div class="select-drop js-scroll">
+										<ul>
+											<li>1 минута</li>
+											<li>1 час</li>
+										</ul>
+									</div>
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+
+							<div class="cell verif-ok">
+								<label for="">Стоимость приема: *</label>
+								<div class="check">
+										<input type="checkbox" id="sex-f">
+										<label for="sex-f">от</label>
+									</div>
+								<input type="text" class="input" placeholder="150 грн">
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<!-- BEGIN .schedule -->
+							<div class="schedule">
+								<h2><span class="heart"></span> Дневник приема доктора</h2>
+								<div class="circle-prev" id="c1-p"></div>
+								<div class="circle-next" id="c1-n"></div>
+								<!-- BEGIN .circle -->
+								<div class="circle" id="c1">
+									<!-- BEGIN .circle-item -->
+									<div class="circle-item">
+										<ul class="week">
+											<li><strong>пн.</strong>12.05.13</li>
+											<li><strong>втр.</strong>12.05.13</li>
+											<li><strong>ср.</strong>12.05.13</li>
+											<li><strong>чт.</strong>12.05.13</li>
+											<li><strong>пт.</strong>12.05.13</li>
+											<li><strong>суб.</strong>12.05.13</li>
+											<li><strong>воскр.</strong>12.05.13</li>
+										</ul>
+										<ul class="days">
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<!-- END .circle-item -->
+
+									<!-- BEGIN .circle-item -->
+									<div class="circle-item">
+										<ul class="week">
+											<li><strong>пн.</strong>12.05.13</li>
+											<li><strong>втр.</strong>12.05.13</li>
+											<li><strong>ср.</strong>12.05.13</li>
+											<li><strong>чт.</strong>12.05.13</li>
+											<li><strong>пт.</strong>12.05.13</li>
+											<li><strong>суб.</strong>12.05.13</li>
+											<li><strong>воскр.</strong>12.05.13</li>
+										</ul>
+										<ul class="days">
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<!-- END .circle-item -->
+								</div>
+								<!-- END .circle -->
+							</div>
+						<!-- END .schedule -->
+						</div>
+						<!-- END .row -->
+						<!-- BEGIN .btn-row -->
+						<div class="btn-row">
+							<input type="submit" class="btn btn_green" value="Сохранить">
+						</div>
+						<!-- END .btn-row -->
+					</div>
+					<!-- END .medico-diary -->
+						<div></div>
+					</div>
 				</div>
-				<!-- END .doctor-form -->
+				<!-- END .medico -->
 
 				<!-- BEGIN .system-settings -->
 				<div class="system-settings  js-edit-tab" style="display: none;">

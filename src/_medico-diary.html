@@ -1,0 +1,300 @@
+					<!-- BEGIN .medico-diary -->
+					<div class="medico-diary js-doctor-tab" style="display: none;">
+						<!-- BEGIN .row -->
+						<div class="row">
+							<div class="cell verif-error">
+								<label for="">Часы приема: *</label>
+								<div class="select-group">
+									с
+									<div class="select select_small js-select">
+										<input type="text" placeholder="08:00">
+										<div class="select-drop js-scroll" style="display: none;">
+											<ul>
+												<li>08:00</li>
+												<li>09:00</li>
+												<li>10:00</li>
+												<li>11:00</li>
+												<li>12:00</li>
+												<li>13:00</li>
+												<li>14:00</li>
+												<li>15:00</li>
+												<li>16:00</li>
+												<li>17:00</li>
+												<li>18:00</li>
+											</ul>
+										</div>
+									</div>
+									до
+									<div class="select select_small js-select">
+										<input type="text" placeholder="08:00">
+										<div class="select-drop js-scroll" style="display: none;">
+											<ul>
+												<li>08:00</li>
+												<li>09:00</li>
+												<li>10:00</li>
+												<li>11:00</li>
+												<li>12:00</li>
+												<li>13:00</li>
+												<li>14:00</li>
+												<li>15:00</li>
+												<li>16:00</li>
+												<li>17:00</li>
+												<li>18:00</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+
+							<div class="cell verif-ok">
+								<label for="">Временной интервал: *</label>
+								<div class="select select_center js-select ">
+									<input type="text" placeholder="1 час">
+									<div class="select-drop js-scroll">
+										<ul>
+											<li>1 минута</li>
+											<li>1 час</li>
+										</ul>
+									</div>
+								</div>
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+
+							<div class="cell verif-ok">
+								<label for="">Стоимость приема: *</label>
+								<div class="check">
+										<input type="checkbox" id="sex-f">
+										<label for="sex-f">от</label>
+									</div>
+								<input type="text" class="input" placeholder="150 грн">
+								<span class="state-ok"></span>
+								<span class="state-error"></span>
+							</div>
+
+						</div>
+						<!-- END .row -->
+
+						<!-- BEGIN .row -->
+						<div class="row">
+							<!-- BEGIN .schedule -->
+							<div class="schedule">
+								<h2><span class="heart"></span> Дневник приема доктора</h2>
+								<div class="circle-prev" id="c1-p"></div>
+								<div class="circle-next" id="c1-n"></div>
+								<!-- BEGIN .circle -->
+								<div class="circle" id="c1">
+									<!-- BEGIN .circle-item -->
+									<div class="circle-item">
+										<ul class="week">
+											<li><strong>пн.</strong>12.05.13</li>
+											<li><strong>втр.</strong>12.05.13</li>
+											<li><strong>ср.</strong>12.05.13</li>
+											<li><strong>чт.</strong>12.05.13</li>
+											<li><strong>пт.</strong>12.05.13</li>
+											<li><strong>суб.</strong>12.05.13</li>
+											<li><strong>воскр.</strong>12.05.13</li>
+										</ul>
+										<ul class="days">
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>14:00</li>
+													<li>14:30</li>
+													<li>15:00</li>
+													<li>16:00</li>
+													<li>17:00</li>
+													<li>18:30</li>
+													<li>19:00</li>
+													<li>19:30</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<!-- END .circle-item -->
+
+									<!-- BEGIN .circle-item -->
+									<div class="circle-item">
+										<ul class="week">
+											<li><strong>пн.</strong>12.05.13</li>
+											<li><strong>втр.</strong>12.05.13</li>
+											<li><strong>ср.</strong>12.05.13</li>
+											<li><strong>чт.</strong>12.05.13</li>
+											<li><strong>пт.</strong>12.05.13</li>
+											<li><strong>суб.</strong>12.05.13</li>
+											<li><strong>воскр.</strong>12.05.13</li>
+										</ul>
+										<ul class="days">
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+											<li class="day">
+												<ul class="time">
+													<li>7:00</li>
+													<li>7:30</li>
+													<li>8:00</li>
+													<li>9:00</li>
+													<li>10:00</li>
+													<li>11:30</li>
+													<li>12:00</li>
+													<li>13:00</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<!-- END .circle-item -->
+								</div>
+								<!-- END .circle -->
+							</div>
+						<!-- END .schedule -->
+						</div>
+						<!-- END .row -->
+						<!-- BEGIN .btn-row -->
+						<div class="btn-row">
+							<input type="submit" class="btn btn_green" value="Сохранить">
+						</div>
+						<!-- END .btn-row -->
+					</div>
+					<!-- END .medico-diary -->

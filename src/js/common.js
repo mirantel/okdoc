@@ -122,7 +122,11 @@ $('.clinic-prof-nav li').click(function(){
 		.parents('.clinic-prof').find('.js-clinic-tab').eq($(this).index()).fadeIn(150).siblings('.js-clinic-tab').hide();
 	return false;
 });
-
+$('.medico-nav li').click(function(){
+	if (!($(this).hasClass('is-active'))) $(this).addClass('is-active').siblings().removeClass('is-active')
+		.parents('.medico').find('.js-doctor-tab').eq($(this).index()).fadeIn(150).siblings('.js-doctor-tab').hide();
+	return false;
+});
 //select
 $('.js-select span, .js-select input').click(function() {
 	if ($(this).parent().hasClass('is-open')) {

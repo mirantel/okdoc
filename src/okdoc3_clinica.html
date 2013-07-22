@@ -8,6 +8,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.jscrollpane.min.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
 	<script src="js/common.js"></script>
 	<!--[if lte IE 9]>
 		<script src="js/jquery.placeholderpatch.js"></script>
@@ -47,20 +48,24 @@
 				</div>
 				<!-- END .clinic-prof -->
 
-				<!-- BEGIN .doctor-form -->
-				<div class="doctor-form  js-edit-tab" style="display: none;">
-					<ul class="doctor-form-nav">
+				<!-- BEGIN .medico -->
+				<div class="medico js-edit-tab" style="display: none;">
+					<ul class="medico-nav">
 						<li class="is-active">Личная информация</li>
 						<li>Ваши контакты</li>
 						<li>Образование и специализация</li>
 						<li>Дневник врача</li>
 						<li><span>Как видят мою<br> страницу пациенты</span></li>
 					</ul>
-					<div class="doctor-form-content">
-						
+					<div class="medico-content">
+						@@include('_medico-personal.html')
+						@@include('_medico-contacts.html')
+						@@include('_medico-education.html')
+						@@include('_medico-diary.html')
+						<div></div>
 					</div>
 				</div>
-				<!-- END .doctor-form -->
+				<!-- END .medico -->
 
 				<!-- BEGIN .system-settings -->
 				<div class="system-settings  js-edit-tab" style="display: none;">

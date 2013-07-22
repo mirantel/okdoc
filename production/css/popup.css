@@ -4,7 +4,7 @@
 
 .is-shown { top: 50%; opacity: 1; }
 
-.popup-close { position: absolute; background: url('../img/icons-sb204e6a7de.png') 0 -598px no-repeat; width: 14px; height: 14px; cursor: pointer; top: 20px; right: 20px; }
+.popup-close { position: absolute; background: url('../img/icons-sb195f44ff1.png') 0 -667px no-repeat; width: 14px; height: 14px; cursor: pointer; top: 20px; right: 20px; }
 .popup-close:hover { opacity: 0.7; }
 
 .popup-title { font-family: "Comic Sans MS", Arial, Helvetica, sans-serif; font-size: 22px; font-weight: normal; margin: 0 0 15px -3px; }
@@ -17,7 +17,7 @@
 
 .popup_metro { width: 738px; margin: -275px 0 0 -383px; padding: 17px 0 25px 28px; position: absolute; }
 .popup_metro .metro { position: relative; padding: 15px 0 0 5px; }
-.popup_metro .pointer { position: absolute; background: url('../img/icons-sb204e6a7de.png') 0 -545px no-repeat; width: 30px; height: 43px; bottom: 7px; left: -7px; display: none; z-index: 10; }
+.popup_metro .pointer { position: absolute; background: url('../img/icons-sb195f44ff1.png') 0 -614px no-repeat; width: 30px; height: 43px; bottom: 7px; left: -7px; display: none; z-index: 10; }
 .popup_metro input[type="radio"]:checked + label::before { display: none; }
 .popup_metro input[type="radio"]:checked + label .pointer { display: block; }
 .popup_metro input[type="radio"] + label { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 0; line-height: 0; color: transparent; display: block; width: 17px; height: 17px; border-radius: 50%; cursor: pointer; position: relative; background: transparent; }

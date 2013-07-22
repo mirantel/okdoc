@@ -70,7 +70,8 @@
 		float: left;
 	}
 	.col1{
-		width: 200px ;
+		width: 200px;
+		margin-bottom: 36px;
 	}
 	.col2{
 		width: 714px;
@@ -81,6 +82,50 @@
 		padding-right: 37px;
 		margin-right: 16px;
 		font-size: 12px;
+	}
+	.cell-btn{
+		float: left;
+		position: relative;
+		margin-top: 23px;
+	}
+	.cell_check{
+		min-height: 30px;
+		margin-top: 32px;
+		.check-label{
+			color: #696969;
+			font-size: 14px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+	}
+	.check{
+		display: inline-block;
+		position: relative;
+		input{
+			position: absolute;
+			top: 3px;
+			left:2px;
+			opacity: 0;
+			z-index: 2;
+			&:checked + label:before{
+				@include sized-sprite($icons, 'check_a_green');
+			}
+		}
+		label{
+			display: inline-block;
+			margin: 0 11px 0 0;
+			padding-left: 23px;
+			position: relative;
+			cursor: pointer;
+			&:before{
+				content:'';
+				position: absolute;
+				top: 3px;
+				left: 2px;
+				@include sized-sprite($icons, 'check');
+				cursor: pointer;
+			}
+		}
 	}
 	.row{
 		//overflow: hidden;
@@ -95,6 +140,17 @@
 	}
 	.cell-btn{
 		text-align: right
+	}
+	.cell_textarea{
+		textarea{
+			height: 108px - 10px;
+			width: 857px - 20px;
+			resize: none;
+		}
+		.state-ok,.state-error{
+			bottom: auto;
+			top:28px;
+		}
 	}
 	.state-ok{
 		position: absolute;
@@ -138,7 +194,7 @@
 .clinic-prof{
 	padding: 22px 0 0;
 }
-.clinic-prof-nav, .doctor-form-nav{
+.clinic-prof-nav, .medico-nav{
 	overflow: hidden;
 	margin-bottom: 26px;
 	li{
@@ -194,7 +250,26 @@
 		margin: 0 5px;
 	}
 }
-
+.select-group-mid{
+	white-space: nowrap;
+	.select{
+		display: inline-block;
+		margin: 0 0 0 14px;
+		&:first-child{
+			margin: 0;
+		}
+	}
+}
+.select-group-tiny{
+	white-space: nowrap;
+	.select{
+		display: inline-block;
+		margin: 0 0 0 14px;
+		&:first-child{
+			margin: 0;
+		}
+	}
+}
 .select{
 	position: relative;
 	-webkit-user-select: none;
@@ -313,7 +388,17 @@
 
 
 .select_mid{
-	width: auto;
+	input{
+		padding: 0 28px 0 8px;
+		width: 128px - 8px - 28px;
+		text-align: center;
+	}
+	.select-drop{
+		li{
+			padding: 4px 2px 4px 13px;
+			text-align: center;
+		}
+	}
 }
 .select_small{
 	input{
@@ -334,8 +419,23 @@
 		width: 81px - 8px - 28px;
 		text-align: center;
 	}
+	.select-drop{
+		li{
+			padding: 4px 2px 4px 13px;
+			text-align: center;
+		}
+	}
 }
-
+.select_center{
+	input{
+		text-align: center;
+	}
+	.select-drop{
+		li{
+			text-align: center;
+		}
+	}
+}
 
 
 
@@ -352,13 +452,13 @@
 		margin: 0 0 14px;
 	}
 }
-.clinic-add-logo{
+.clinic-add-logo, .doctor-add-photo{
 	iframe{
 		border:0;
 		overflow: hidden;
 	}
 }
-.clinic-add-foto{
+.add-photo-link{
 	text-align: center;
 	span{
 		cursor: pointer;
@@ -371,7 +471,7 @@
 	}
 	input{display: none;}
 }
-.clinic-rating{
+.clinic-rating, .doctor-rating{
 	display: inline-block;
 	margin: 0 0 0 -2px;
 	padding: 10px 0 0;
@@ -399,7 +499,7 @@
 	.row{margin-bottom: 17px;}
 	.btn{
 		right: 30px;
-		bottom: 17px;
+		bottom: 33px;
 		position: absolute;
 	}
 }
@@ -474,14 +574,18 @@
 
 
 //
-.doctor-form{
+.medico{
 	padding-top: 22px;
 }
-.doctor-form-nav{
+.medico-content{
+	padding-left: 37px;
+}
+.medico-nav{
+	margin-bottom: 22px;
 	li{
 		margin: 0 0 0 30px;
 		padding: 0 5px;
-		line-height: 25px;
+		line-height: 31px;
 		&:first-child{
 			margin-left: 36px;
 		}
@@ -492,5 +596,37 @@
 			top: -3px;
 			display: block;
 		}
+	}
+}
+.medico-personal{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+.medico-contacts{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	.col1{
+		width: 576px;
+		margin-bottom: 0;
+	}
+	.col2{
+		width: 916px - 576px;
+	}
+	.row{
+		margin-bottom: 16px;
+	}
+}
+.medico-education{
+	.btn-row{
+		margin: 0 30px 22px 0;
+	}
+	.row{margin-bottom: 21px;}
+}
+
+.medico-diary{
+	.schedule{
+		float: left;
 	}
 }
