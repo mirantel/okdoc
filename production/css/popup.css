@@ -4,20 +4,20 @@
 
 .is-shown { top: 50%; opacity: 1; }
 
-.popup-close { position: absolute; background: url('../img/icons-sb195f44ff1.png') 0 -667px no-repeat; width: 14px; height: 14px; cursor: pointer; top: 20px; right: 20px; }
+.popup-close { position: absolute; background: url('../img/icons-s91f178ddf2.png') 0 -828px no-repeat; width: 14px; height: 14px; cursor: pointer; top: 20px; right: 20px; }
 .popup-close:hover { opacity: 0.7; }
 
 .popup-title { font-family: "Comic Sans MS", Arial, Helvetica, sans-serif; font-size: 22px; font-weight: normal; margin: 0 0 15px -3px; }
 
 .popup_doctors-type { width: 665px; margin: -232px 0 0 -352px; padding: 17px 15px 25px 25px; }
-.popup_doctors-type .choose-doctor { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; -webkit-column-gap: 23px; -moz-column-gap: 23px; column-gap: 23px; }
+.popup_doctors-type .choose-doctor { -webkit-column-count: 4; -moz-column-count: 4; -ms-column-count: 4; -o-column-count: 4; column-count: 4; -webkit-column-gap: 23px; -moz-column-gap: 23px; -ms-column-gap: 23px; -o-column-gap: 23px; column-gap: 23px; }
 .popup_doctors-type .choose-doctor li { list-style: none; margin-bottom: 13px; line-height: 16px; }
 .popup_doctors-type .btn-hold { height: 38px; width: 100%; }
 .popup_doctors-type .btn { position: absolute; bottom: 25px; right: 32px; padding: 0 32px; }
 
 .popup_metro { width: 738px; margin: -275px 0 0 -383px; padding: 17px 0 25px 28px; position: absolute; }
 .popup_metro .metro { position: relative; padding: 15px 0 0 5px; }
-.popup_metro .pointer { position: absolute; background: url('../img/icons-sb195f44ff1.png') 0 -614px no-repeat; width: 30px; height: 43px; bottom: 7px; left: -7px; display: none; z-index: 10; }
+.popup_metro .pointer { position: absolute; background: url('../img/icons-s91f178ddf2.png') 0 -98px no-repeat; width: 30px; height: 43px; bottom: 7px; left: -7px; display: none; z-index: 10; }
 .popup_metro input[type="radio"]:checked + label::before { display: none; }
 .popup_metro input[type="radio"]:checked + label .pointer { display: block; }
 .popup_metro input[type="radio"] + label { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 0; line-height: 0; color: transparent; display: block; width: 17px; height: 17px; border-radius: 50%; cursor: pointer; position: relative; background: transparent; }

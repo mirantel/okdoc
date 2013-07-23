@@ -766,6 +766,27 @@
 		}
 	}
 }
+
+.schedule_check{
+	.circle-item{
+		background-image: url('../img/bg-table_check.png');
+	}
+	.check{
+		color: #6a6a6a;
+		font-size: 12px;
+	}
+	.days li.day{
+		text-align: left;
+		padding-top: 14px;
+	}
+	.time li{
+		margin-bottom: 6px;
+	}
+	.circle {
+		height: 690px;
+	}
+}
+
 .doc-inf{
 	display: inline-block;
 	width: 100%;
