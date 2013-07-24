@@ -423,53 +423,55 @@
 		}
 	}
 	.question{
-		color: #179072;
-		font-size: 12.5px;
-		position: relative;
 		top: -4px;
 		margin-left: 5px;
-		display: inline-block;
-		span{
-			text-decoration: underline;
-			cursor: pointer;
-		}
 	}
-	.hint{
-		display: none;
-		background: #f4f4f4;
-		border:1px solid #c5c5c5;
-		border-radius:5px;
+}
+.question{
+	color: #179072;
+	font-size: 12.5px;
+	display: inline-block;
+	position: relative;
+	span{
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+.hint{
+	display: none;
+	background: #f4f4f4;
+	border:1px solid #c5c5c5;
+	border-radius:5px;
+	position: absolute;
+	top: 19px;
+	right: -14px;
+	color: #404040;
+	padding:6px 9px 9px;
+	width: 188px - 18px;
+	font-size: 11px;
+	.hint-arr{
+		@include sized-sprite($icons, 'hint-arr');
 		position: absolute;
-		top: 19px;
-		right: -14px;
-		color: #404040;
-		padding:6px 9px 9px;
-		width: 188px - 18px;
+		right: 9px;
+		top: -8px;
+	}
+	h2{
+		font-size: 14px;
+		color: #179072;
+		margin-bottom: 5px;
+	}
+	p{
 		font-size: 11px;
-		.hint-arr{
-			@include sized-sprite($icons, 'hint-arr');
-			position: absolute;
-			right: 9px;
-			top: -8px;
-		}
-		h2{
-			font-size: 14px;
-			color: #179072;
-			margin-bottom: 5px;
-		}
-		p{
-			font-size: 11px;
-			margin-bottom: 11px;
-		}
-		li{
-			list-style: none;
-			border:0;
-			padding: 0;
-			&:before{
-				content:'-';
-				display: inline-block;
-				margin-right: 4px;
-			}
+		margin-bottom: 11px;
+	}
+	li{
+		list-style: none;
+		border:0;
+		padding: 0;
+		&:before{
+			content:'-';
+			display: inline-block;
+			margin-right: 4px;
 		}
 	}
 }
@@ -769,6 +771,7 @@
 
 .schedule_check{
 	.circle-item{
+		height: 678px;
 		background-image: url('../img/bg-table_check.png');
 	}
 	.check{
@@ -779,11 +782,8 @@
 		text-align: left;
 		padding-top: 14px;
 	}
-	.time li{
-		margin-bottom: 6px;
-	}
 	.circle {
-		height: 690px;
+		height: 678px;
 	}
 }
 
@@ -1112,8 +1112,16 @@
 			background: url(../img/bullet-arr.png) no-repeat 0 15px;
 			a{
 				margin-right: 4px;
-				
 			}
 		}
+	}
+}
+
+.medico-diary{
+	position: relative;
+	.btn{
+		position: absolute;
+		right: 97px;
+		bottom: 27px;
 	}
 }

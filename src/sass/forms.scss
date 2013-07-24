@@ -149,7 +149,8 @@
 		}
 		input{
 			left:auto;
-			right: 2px;
+			right: 0;
+			top: 1px;
 			&:checked + span:after{
 				@include sized-sprite($icons, 'check_a');
 			}
@@ -508,6 +509,7 @@
 		display: inline-block;
 		margin: 5px 0 0 7px;
 	}
+	.question span{margin: 0;}
 }
 
 //clinic-address
