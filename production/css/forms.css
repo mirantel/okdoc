@@ -166,4 +166,6 @@
 .medico-education .btn-row { margin: 0 30px 22px 0; }
 .medico-education .row { margin-bottom: 21px; }
 
-.medico-diary .schedule { float: left; }
+.medico-diary { position: relative; }
+.medico-diary .btn { position: absolute; right: 97px; bottom: 27px; }
+.medico-diary .schedule { float: none; }
