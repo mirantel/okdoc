@@ -171,6 +171,7 @@
 .medico-diary .schedule { float: none; }
 
 .system { padding: 22px 0 0; }
+.system .pagi { padding: 15px 0 25px; margin: 0 25px; }
 
 .system-nav { margin-bottom: 22px; }
 .system-nav li { margin: 0 0 0 53px; padding: 0 23px; line-height: 31px; }
@@ -185,11 +186,17 @@
 .requests .content dl { color: #000; margin: 8px 12px 10px; line-height: 19px; }
 .requests .content dt { float: left; clear: left; width: 140px; }
 .requests .content dd { margin-left: 143px; margin-bottom: 3px; }
-.requests .rejection { display: none; }
-.requests .rejection .btn { padding: 0; width: 88px; }
+.requests .rejection { display: none; text-align: right; margin: 12px 0 -20px; }
+.requests .rejection label { display: inline-block; font-size: 12px; vertical-align: middle; margin: 0 14px 0 0; }
+.requests .rejection .input { vertical-align: middle; height: 32px; width: 158px; }
+.requests .rejection .btn { vertical-align: middle; padding: 0; width: 90px; margin: 0 1px 0 10px; }
 .requests .is-not-paid .content { background: #fdf3c3; border-color: #fbe681; box-shadow: 0 0 0 1px #f6e8a3; }
 .requests .is-paid .content { background: #e0fdc3; border-color: #a2cd7f; box-shadow: 0 0 0 1px #b5cea2; }
 .requests .is-canceled .rejection { display: block; }
 .requests .is-canceled .content { background: #ffcfcf; border-color: #dc7373; box-shadow: 0 0 0 1px #da9292; }
+
+.requests-output { font-size: 14px; padding: 0 25px; line-height: 1.5; margin-bottom: 20px; }
+.requests-output dt { float: left; clear: left; }
+.requests-output dd { color: #f21c1c; margin-left: 5px; }
 
 .requests-filter { width: 122px; }

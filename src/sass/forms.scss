@@ -670,6 +670,10 @@
 
 .system{
 	padding: 22px 0 0;
+	.pagi{
+		padding: 15px 0 25px;
+		margin: 0 25px;
+	}
 }
 .system-nav{
 	margin-bottom: 22px;
@@ -732,11 +736,24 @@
 	}
 	.rejection{
 		display: none;
-		label{}
-		.input{}
+		text-align: right;
+		margin: 12px 0 -20px;
+		label{
+			display: inline-block;
+			font-size: 12px;
+			vertical-align: middle;
+			margin: 0 14px 0 0;
+		}
+		.input{
+			vertical-align: middle;
+			height: 32px;
+			width: 158px;
+		}
 		.btn{
+			vertical-align: middle;
 			padding: 0;
-			width: 88px;
+			width: 90px;
+			margin: 0 1px 0 10px;
 		}
 	}
 	.is-not-paid{
@@ -760,6 +777,20 @@
 			border-color:#dc7373;
 			box-shadow:0 0 0 1px #da9292;
 		}
+	}
+}
+.requests-output{
+	font-size: 14px;
+	padding: 0 25px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	dt{
+		float: left;
+		clear: left;
+	}
+	dd{
+		color: #f21c1c;
+		margin-left: 5px;
 	}
 }
 .requests-filter{
