@@ -134,6 +134,11 @@ input[type="radio"] + label{
 	background-color: #0b7455;
 	@include background-image(linear-gradient(#02c38b, rgba(2,195,139,.0)));
 }
+.btn_red{
+	border-color: #990214;
+	background-color: #c10017;
+	@include background-image(linear-gradient(#d4182f, rgba(212,24,47,.0)));
+}
 
 .main{
 	padding: 0 4px;

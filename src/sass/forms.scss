@@ -224,7 +224,7 @@
 .clinic-prof{
 	padding: 22px 0 0;
 }
-.clinic-prof-nav, .medico-nav{
+.clinic-prof-nav, .medico-nav, .system-nav{
 	overflow: hidden;
 	margin-bottom: 26px;
 	li{
@@ -666,4 +666,102 @@
 	.schedule{
 		float: none;
 	}
+}
+
+.system{
+	padding: 22px 0 0;
+}
+.system-nav{
+	margin-bottom: 22px;
+	li{
+		margin: 0 0 0 53px;
+		padding: 0 23px;
+		line-height: 31px;
+		&:first-child{
+			margin-left: 29px;
+		}
+		span{
+			line-height: 18px;
+			position: relative;
+			text-align: center;
+			top: -3px;
+			display: block;
+		}
+	}
+}
+
+.requests{
+	padding: 0 25px;
+	li{
+		list-style: none;
+		margin-bottom: 20px;
+	}
+	.num{
+		font-size: 14px;
+		color: #000;
+		font-family: $comic;
+		float: left;
+	}
+	.date{
+		color: #878787;
+		text-align: right;
+		margin-bottom: 9px;
+		padding-top: 3px;
+	}
+	.content{
+		border:1px solid #eaeaea;
+		box-shadow:0 0 0 1px #e2e2e2;
+		margin: 1px;
+		border-radius:5px;
+		background: #fff;
+		clear: both;
+		dl{
+			color: #000;
+			margin: 8px 12px 10px;
+			line-height: 19px;
+		}
+		dt{
+			float: left;
+			clear: left;
+			width: 140px;
+		}
+		dd{
+			margin-left: 143px;
+			margin-bottom: 3px;
+		}
+	}
+	.rejection{
+		display: none;
+		label{}
+		.input{}
+		.btn{
+			padding: 0;
+			width: 88px;
+		}
+	}
+	.is-not-paid{
+		.content{
+			background: #fdf3c3;
+			border-color:#fbe681;
+			box-shadow:0 0 0 1px #f6e8a3;
+		}
+	}
+	.is-paid{
+		.content{
+			background: #e0fdc3;
+			border-color:#a2cd7f;
+			box-shadow:0 0 0 1px #b5cea2;
+		}
+	}
+	.is-canceled{
+		.rejection{display: block;}
+		.content{
+			background: #ffcfcf;
+			border-color:#dc7373;
+			box-shadow:0 0 0 1px #da9292;
+		}
+	}
+}
+.requests-filter{
+	width: 122px;
 }

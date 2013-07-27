@@ -67,11 +67,18 @@
 				</div>
 				<!-- END .medico -->
 
-				<!-- BEGIN .system-settings -->
-				<div class="system-settings  js-edit-tab" style="display: none;">
-					
+				<!-- BEGIN .system -->
+				<div class="system  js-edit-tab" style="display: none;">
+					<ul class="system-nav">
+						<li class="is-active">Уведомления</li>
+						<li>Заявки</li>
+					</ul>
+					<div class="system-content">
+						@@include('_system-requests.html')
+						
+					</div>
 				</div>
-				<!-- END .system-settings -->
+				<!-- END .system -->
 
 			</div>
 			<!-- END .edit-tabs-content -->

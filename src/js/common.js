@@ -127,6 +127,11 @@ $('.medico-nav li').click(function(){
 		.parents('.medico').find('.js-doctor-tab').eq($(this).index()).fadeIn(150).siblings('.js-doctor-tab').hide();
 	return false;
 });
+$('.system-nav li').click(function(){
+	if (!($(this).hasClass('is-active'))) $(this).addClass('is-active').siblings().removeClass('is-active')
+		.parents('.system').find('.js-system-tab').eq($(this).index()).fadeIn(150).siblings('.js-system-tab').hide();
+	return false;
+});
 //select
 $('.js-select span, .js-select input').click(function() {
 	if ($(this).parent().hasClass('is-open')) {
