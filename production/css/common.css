@@ -105,7 +105,7 @@ a.btn { display: inline-block; }
 
 .search-label1 { width: 77px; }
 
-.search-input { height: 37px; width: 212px; padding: 0 12px; }
+.search-input { height: 37px; width: 212px; padding: 0 12px; line-height: 37px; }
 
 .search-btn1 { float: right; width: 129px; }
 

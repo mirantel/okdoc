@@ -10,7 +10,7 @@
 .popup-title { font-family: "Comic Sans MS", Arial, Helvetica, sans-serif; font-size: 22px; font-weight: normal; margin: 0 0 15px -3px; }
 
 .popup_doctors-type { width: 665px; margin: -232px 0 0 -352px; padding: 17px 15px 25px 25px; }
-.popup_doctors-type .choose-doctor { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; -webkit-column-gap: 23px; -moz-column-gap: 23px; column-gap: 23px; }
+.popup_doctors-type .choose-doctor { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; -webkit-column-gap: 10px; -moz-column-gap: 10px; column-gap: 10px; }
 .popup_doctors-type .choose-doctor li { list-style: none; margin-bottom: 13px; line-height: 16px; }
 .popup_doctors-type .btn-hold { height: 38px; width: 100%; }
 .popup_doctors-type .btn { position: absolute; bottom: 25px; right: 32px; padding: 0 32px; }

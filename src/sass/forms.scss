@@ -322,6 +322,7 @@
 		width: 183px - 28px - 15px;
 		padding: 0 28px 0 15px;
 		color: #000;
+		//@include unselectable();
 	}
 	.select-drop{
 		display: none;
@@ -676,7 +677,7 @@
 	}
 }
 .system-nav{
-	margin-bottom: 22px;
+	margin-bottom: 16px;
 	li{
 		margin: 0 0 0 53px;
 		padding: 0 23px;
@@ -705,6 +706,7 @@
 		color: #000;
 		font-family: $comic;
 		float: left;
+		margin-left: 2px;
 	}
 	.date{
 		color: #878787;
@@ -794,5 +796,48 @@
 	}
 }
 .requests-filter{
-	width: 122px;
+	padding: 0 25px;
+	margin-bottom: 18px;
+	.select{
+		width: 124px;
+		display: inline-block;
+		width: auto;
+		&:after{
+			border-width: 3px 4px;
+			border-color: transparent transparent transparent #727272;
+			top: 11px;
+			right: 6px;
+		}
+		&.is-open{
+			width: 124px;
+			input{
+				border-radius:4px 4px 0 0;
+			}
+			&:after{
+				border-width: 4px 3px;
+				border-color: #727272 transparent transparent;
+				top: 13px;
+				right: 8px;
+			}
+		}
+		input{
+			font-size: 12px;
+			color: #000;
+			background: none;
+			border-color:transparent;
+			height: 25px;
+			padding: 0 20px 0 6px;
+			width: 96px;
+			border-color:#c6c6c6;
+			background: #fff;
+		}
+		.select-drop{
+			top: 26px;
+			li{
+				font-size: 12px;
+				padding: 4px 9px 2px;
+			}
+		}
+	}
+
 }

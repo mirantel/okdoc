@@ -48,13 +48,7 @@
 	padding: 17px 15px 25px 25px;
 	.choose-doctor{
 		@include column-count(4);
-		@include column-gap(23px);
-		.column{
-//			padding-left: 23px;
-			&.first{
-				//padding-left: 0;
-			}
-		}
+		@include column-gap(10px);
 		li{
 			list-style: none;
 			margin-bottom: 13px;

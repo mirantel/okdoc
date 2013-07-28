@@ -105,7 +105,7 @@ a.btn { display: inline-block; }
 
 .search-label1 { width: 77px; }
 
-.search-input { height: 37px; width: 212px; padding: 0 12px; }
+.search-input { height: 37px; width: 212px; padding: 0 12px; line-height: 37px; }
 
 .search-btn1 { float: right; width: 129px; }
 
@@ -258,7 +258,7 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .doctor-grade .doctor-rating span { font-size: 20px; }
 .doctor-grade .question { top: -4px; margin-left: 5px; }
 
-.question { color: #179072; font-size: 12.5px; display: inline-block; position: relative; }
+.question { z-index: 3; color: #179072; font-size: 12.5px; display: inline-block; position: relative; }
 .question span { text-decoration: underline; cursor: pointer; }
 
 .hint { display: none; background: #f4f4f4; border: 1px solid #c5c5c5; border-radius: 5px; position: absolute; top: 19px; right: -14px; color: #404040; padding: 6px 9px 9px; width: 170px; font-size: 11px; }
@@ -453,7 +453,7 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .popup-title { font-family: "Comic Sans MS", Arial, Helvetica, sans-serif; font-size: 22px; font-weight: normal; margin: 0 0 15px -3px; }
 
 .popup_doctors-type { width: 665px; margin: -232px 0 0 -352px; padding: 17px 15px 25px 25px; }
-.popup_doctors-type .choose-doctor { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; -webkit-column-gap: 23px; -moz-column-gap: 23px; column-gap: 23px; }
+.popup_doctors-type .choose-doctor { -webkit-column-count: 4; -moz-column-count: 4; column-count: 4; -webkit-column-gap: 10px; -moz-column-gap: 10px; column-gap: 10px; }
 .popup_doctors-type .choose-doctor li { list-style: none; margin-bottom: 13px; line-height: 16px; }
 .popup_doctors-type .btn-hold { height: 38px; width: 100%; }
 .popup_doctors-type .btn { position: absolute; bottom: 25px; right: 32px; padding: 0 32px; }
@@ -728,14 +728,14 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .system { padding: 22px 0 0; }
 .system .pagi { padding: 15px 0 25px; margin: 0 25px; }
 
-.system-nav { margin-bottom: 22px; }
+.system-nav { margin-bottom: 16px; }
 .system-nav li { margin: 0 0 0 53px; padding: 0 23px; line-height: 31px; }
 .system-nav li:first-child { margin-left: 29px; }
 .system-nav li span { line-height: 18px; position: relative; text-align: center; top: -3px; display: block; }
 
 .requests { padding: 0 25px; }
 .requests li { list-style: none; margin-bottom: 20px; }
-.requests .num { font-size: 14px; color: #000; font-family: "Comic Sans MS", Arial, Helvetica, sans-serif; float: left; }
+.requests .num { font-size: 14px; color: #000; font-family: "Comic Sans MS", Arial, Helvetica, sans-serif; float: left; margin-left: 2px; }
 .requests .date { color: #878787; text-align: right; margin-bottom: 9px; padding-top: 3px; }
 .requests .content { border: 1px solid #eaeaea; box-shadow: 0 0 0 1px #e2e2e2; margin: 1px; border-radius: 5px; background: #fff; clear: both; }
 .requests .content dl { color: #000; margin: 8px 12px 10px; line-height: 19px; }
@@ -754,4 +754,12 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .requests-output dt { float: left; clear: left; }
 .requests-output dd { color: #f21c1c; margin-left: 5px; }
 
-.requests-filter { width: 122px; }
+.requests-filter { padding: 0 25px; margin-bottom: 18px; }
+.requests-filter .select { width: 124px; display: inline-block; width: auto; }
+.requests-filter .select:after { border-width: 3px 4px; border-color: transparent transparent transparent #727272; top: 11px; right: 6px; }
+.requests-filter .select.is-open { width: 124px; }
+.requests-filter .select.is-open input { border-radius: 4px 4px 0 0; }
+.requests-filter .select.is-open:after { border-width: 4px 3px; border-color: #727272 transparent transparent; top: 13px; right: 8px; }
+.requests-filter .select input { font-size: 12px; color: #000; background: none; border-color: transparent; height: 25px; padding: 0 20px 0 6px; width: 96px; border-color: #c6c6c6; background: #fff; }
+.requests-filter .select .select-drop { top: 26px; }
+.requests-filter .select .select-drop li { font-size: 12px; padding: 4px 9px 2px; }

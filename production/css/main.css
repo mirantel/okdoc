@@ -103,7 +103,7 @@
 .doctor-grade .doctor-rating span { font-size: 20px; }
 .doctor-grade .question { top: -4px; margin-left: 5px; }
 
-.question { color: #179072; font-size: 12.5px; display: inline-block; position: relative; }
+.question { z-index: 3; color: #179072; font-size: 12.5px; display: inline-block; position: relative; }
 .question span { text-decoration: underline; cursor: pointer; }
 
 .hint { display: none; background: #f4f4f4; border: 1px solid #c5c5c5; border-radius: 5px; position: absolute; top: 19px; right: -14px; color: #404040; padding: 6px 9px 9px; width: 170px; font-size: 11px; }
