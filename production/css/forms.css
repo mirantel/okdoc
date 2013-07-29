@@ -112,7 +112,8 @@
 .clinic-info .btn-row { margin: -7px 60px 17px 0; }
 .clinic-info .row-graph { margin: 0 0 14px; }
 
-.clinic-add-logo iframe, .doctor-add-photo iframe { border: 0; overflow: hidden; }
+.clinic-add-logo iframe, .doctor-add-photo iframe { border: none; overflow: hidden; }
+.clinic-add-logo iframe html, .doctor-add-photo iframe html { overflow: hidden; }
 
 .add-photo-link { text-align: center; }
 .add-photo-link span { cursor: pointer; text-decoration: underline; font-size: 14px; color: #696969; }
@@ -189,7 +190,7 @@
 .requests .rejection { display: none; text-align: right; margin: 12px 0 -20px; }
 .requests .rejection label { display: inline-block; font-size: 12px; vertical-align: middle; margin: 0 14px 0 0; }
 .requests .rejection .input { vertical-align: middle; height: 32px; width: 158px; }
-.requests .rejection .btn { vertical-align: middle; padding: 0; width: 90px; margin: 0 1px 0 10px; }
+.requests .rejection .btn { vertical-align: middle; padding: 0; width: auto; padding: 0 21px; margin: 0 1px 0 10px; }
 .requests .is-not-paid .content { background: #fdf3c3; border-color: #fbe681; box-shadow: 0 0 0 1px #f6e8a3; }
 .requests .is-paid .content { background: #e0fdc3; border-color: #a2cd7f; box-shadow: 0 0 0 1px #b5cea2; }
 .requests .is-canceled .rejection { display: block; }

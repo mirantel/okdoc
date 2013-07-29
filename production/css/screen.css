@@ -307,7 +307,7 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .appointment .phone strong { font-size: 16px; font-weight: normal; }
 .appointment .phone-ico { background: url('../img/icons-sf47e49dd58.png') 0 -590px no-repeat; width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 6px; position: relative; top: -2px; }
 .appointment .row { margin-bottom: 8px; }
-.appointment input[type="text"] { height: 31px; padding: 0 13px; width: 261px; font-size: 12px; }
+.appointment input[type="text"] { height: 31px; padding: 0 13px; width: 261px; font-size: 12px; line-height: 31px; }
 .appointment .row-radio { margin: 12px 0 6px; }
 .appointment .row-radio span { color: #000; margin-right: 12px; display: inline-block; }
 .appointment .radio { display: inline-block; margin-right: 7px; }
@@ -372,13 +372,13 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .opinion-form .form-block { display: inline-block; width: 100%; margin-bottom: 13px; }
 .opinion-form .form-col { float: left; margin-right: 19px; }
 .opinion-form textarea { font-size: 12px; height: 94px; padding: 3px 8px; width: 240px; resize: none; }
-.opinion-form input[type="text"] { font-size: 12px; height: 25px; padding: 0 5px; width: 237px; }
+.opinion-form input[type="text"] { font-size: 12px; height: 25px; padding: 0 5px; width: 237px; line-height: 25px; }
 .opinion-form .row { margin-bottom: 10px; }
 .opinion-form .btn { font-size: 16px; height: 30px; padding: 0 23px; }
 .opinion-form .rating { width: 100%; display: inline-block; margin-bottom: 18px; }
 .opinion-form .rating-item { width: 33%; float: left; }
-.opinion-form .rating-item span { display: inline-block; margin-right: 10px; }
-.opinion-form .rating-item .stars { display: inline-block; }
+.opinion-form .rating-item span { float: left; margin-right: 10px; }
+.opinion-form .rating-item .stars { width: auto; height: auto; background: none; }
 
 .illness { border-bottom: 1px solid #d9d9d9; padding: 3px 0 20px; margin: 0 10px 21px 0; }
 
@@ -536,7 +536,7 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 
 .popup_entry { width: 677px; padding: 24px 0 64px 30px; margin: -136px 0 0 -353px; min-height: 184px; background: white url("../img/doctor4.jpg") no-repeat 353px 17px; }
 .popup_entry .entry-form { padding: 16px 0 20px; width: 300px; }
-.popup_entry input[type="text"] { font-size: 12px; height: 31px; padding: 0 11px; width: 265px; }
+.popup_entry input[type="text"] { font-size: 12px; height: 31px; line-height: 31px; padding: 0 11px; width: 265px; }
 .popup_entry .row { margin-bottom: 8px; }
 .popup_entry .row-text { margin-top: 15px; }
 .popup_entry .check { display: inline-block; margin-left: 27px; }
@@ -667,7 +667,8 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .clinic-info .btn-row { margin: -7px 60px 17px 0; }
 .clinic-info .row-graph { margin: 0 0 14px; }
 
-.clinic-add-logo iframe, .doctor-add-photo iframe { border: 0; overflow: hidden; }
+.clinic-add-logo iframe, .doctor-add-photo iframe { border: none; overflow: hidden; }
+.clinic-add-logo iframe html, .doctor-add-photo iframe html { overflow: hidden; }
 
 .add-photo-link { text-align: center; }
 .add-photo-link span { cursor: pointer; text-decoration: underline; font-size: 14px; color: #696969; }
@@ -744,7 +745,7 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .requests .rejection { display: none; text-align: right; margin: 12px 0 -20px; }
 .requests .rejection label { display: inline-block; font-size: 12px; vertical-align: middle; margin: 0 14px 0 0; }
 .requests .rejection .input { vertical-align: middle; height: 32px; width: 158px; }
-.requests .rejection .btn { vertical-align: middle; padding: 0; width: 90px; margin: 0 1px 0 10px; }
+.requests .rejection .btn { vertical-align: middle; padding: 0; width: auto; padding: 0 21px; margin: 0 1px 0 10px; }
 .requests .is-not-paid .content { background: #fdf3c3; border-color: #fbe681; box-shadow: 0 0 0 1px #f6e8a3; }
 .requests .is-paid .content { background: #e0fdc3; border-color: #a2cd7f; box-shadow: 0 0 0 1px #b5cea2; }
 .requests .is-canceled .rejection { display: block; }

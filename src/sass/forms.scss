@@ -485,8 +485,11 @@
 }
 .clinic-add-logo, .doctor-add-photo{
 	iframe{
-		border:0;
+		border:none;
 		overflow: hidden;
+		html{
+			overflow: hidden;
+		}
 	}
 }
 .add-photo-link{
@@ -754,7 +757,8 @@
 		.btn{
 			vertical-align: middle;
 			padding: 0;
-			width: 90px;
+			width: auto;
+			padding: 0 21px;
 			margin: 0 1px 0 10px;
 		}
 	}

@@ -152,7 +152,7 @@
 .appointment .phone strong { font-size: 16px; font-weight: normal; }
 .appointment .phone-ico { background: url('../img/icons-sf47e49dd58.png') 0 -590px no-repeat; width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 6px; position: relative; top: -2px; }
 .appointment .row { margin-bottom: 8px; }
-.appointment input[type="text"] { height: 31px; padding: 0 13px; width: 261px; font-size: 12px; }
+.appointment input[type="text"] { height: 31px; padding: 0 13px; width: 261px; font-size: 12px; line-height: 31px; }
 .appointment .row-radio { margin: 12px 0 6px; }
 .appointment .row-radio span { color: #000; margin-right: 12px; display: inline-block; }
 .appointment .radio { display: inline-block; margin-right: 7px; }
@@ -217,13 +217,13 @@
 .opinion-form .form-block { display: inline-block; width: 100%; margin-bottom: 13px; }
 .opinion-form .form-col { float: left; margin-right: 19px; }
 .opinion-form textarea { font-size: 12px; height: 94px; padding: 3px 8px; width: 240px; resize: none; }
-.opinion-form input[type="text"] { font-size: 12px; height: 25px; padding: 0 5px; width: 237px; }
+.opinion-form input[type="text"] { font-size: 12px; height: 25px; padding: 0 5px; width: 237px; line-height: 25px; }
 .opinion-form .row { margin-bottom: 10px; }
 .opinion-form .btn { font-size: 16px; height: 30px; padding: 0 23px; }
 .opinion-form .rating { width: 100%; display: inline-block; margin-bottom: 18px; }
 .opinion-form .rating-item { width: 33%; float: left; }
-.opinion-form .rating-item span { display: inline-block; margin-right: 10px; }
-.opinion-form .rating-item .stars { display: inline-block; }
+.opinion-form .rating-item span { float: left; margin-right: 10px; }
+.opinion-form .rating-item .stars { width: auto; height: auto; background: none; }
 
 .illness { border-bottom: 1px solid #d9d9d9; padding: 3px 0 20px; margin: 0 10px 21px 0; }
 

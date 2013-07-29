@@ -640,6 +640,7 @@
 		padding: 0 13px;
 		width: 261px;
 		font-size: 12px;
+		line-height: 31px;
 	}
 	.row-radio{
 		margin: 12px 0 6px;
@@ -901,6 +902,7 @@
 		height: 25px;
 		padding: 0 5px;
 		width: 237px;
+		line-height: 25px;
 	}
 	.row{
 		margin-bottom: 10px;
@@ -919,10 +921,16 @@
 		width: 33%;
 		float: left;
 		span{
-			display: inline-block;
+			//display: inline-block;
+			float: left;
 			margin-right: 10px;
 		}
-		.stars{display: inline-block;}
+		.stars{
+			//display: inline-block;
+			width: auto;
+			height: auto;
+			background: none;
+		}
 	}
 }
 
