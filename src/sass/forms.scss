@@ -318,7 +318,7 @@
 		right: 12px;
 		cursor: pointer;
 	}
-	input{
+	input,span{
 		font-family: Arial,Helvetica,sans-serif;
 		font-size: 16px;
 		height: 37px;
@@ -332,6 +332,26 @@
 		@include unselectable();
 		position: relative;
 		z-index: 2;
+		// &::-webkit-input-placeholder {
+		// 	color: #000;
+		// 	opacity: 1;
+		// }
+		// &:-moz-placeholder {
+		// 	color: #000;
+		// 	opacity: 1;
+		// }
+		// &::-moz-placeholder {
+		// 	color: #000;
+		// 	opacity: 1;
+		// }
+		// &:-ms-input-placeholder {
+		// 	color: #000;
+		// 	opacity: 1;
+		//}
+	}
+	span{
+		border:1px solid transparent;
+		display: block;
 	}
 	.select-drop{
 		display: none;
@@ -428,7 +448,7 @@
 
 
 .select_mid{
-	input{
+	input,span{
 		padding: 0 28px 0 8px;
 		width: 128px - 8px - 28px;
 		text-align: center;
@@ -441,7 +461,7 @@
 	}
 }
 .select_small{
-	input{
+	input,span{
 		padding: 0 28px 0 8px;
 		width: 110px - 8px - 28px;
 		text-align: center;
@@ -454,7 +474,7 @@
 	}
 }
 .select_tiny{
-	input{
+	input,span{
 		padding: 0 28px 0 8px;
 		width: 81px - 8px - 28px;
 		text-align: center;
