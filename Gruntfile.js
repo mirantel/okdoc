@@ -15,20 +15,20 @@ grunt.initConfig({
 	copy: {
 		main: {
 			files: [
-				{expand: true, cwd: 'src/img/', src: ['**'], dest: 'production/img'},
-				{expand: true, cwd: 'src/css', src: ['**'], dest: 'production/css'},
-				{expand: true, cwd: 'src/js', src: ['**'], dest: 'production/js'}
+				{expand: true, cwd: 'src/img/', src: ['**'], dest: 'production/img/'},
+				{expand: true, cwd: 'src/css/', src: ['screen.css'], dest: 'production/css/'},
+				{expand: true, cwd: 'src/js/', src: ['**'], dest: 'production/js/'}
 			]
 		},
 		css: {
 			files: [
-				{expand: true, cwd: 'src/img/', src: ['**'], dest: 'production/img'},
-				{expand: true, cwd: 'src/css', src: ['**'], dest: 'production/css'},
+				{expand: true, cwd: 'src/img/', src: ['**'], dest: 'production/img/'},
+				{expand: true, cwd: 'src/css/', src: ['**'], dest: 'production/css/'},
 			]
 		},
 		js: {
 			files: [
-				{expand: true, cwd: 'src/js', src: ['**'], dest: 'production/js'}
+				{expand: true, cwd: 'src/js/', src: ['**'], dest: 'production/js/'}
 			]
 		}
 	},
@@ -66,7 +66,8 @@ grunt.initConfig({
 		html: ["production/_*.html"],
 		css: ["production/css/lib", "src/css"],
 		dev: ["production/_*.html", "production/css/lib", "src/css"],
-		release: ["production/*", "src/css"]
+		release: ["production"],
+		after: ["production/_*.html", "src/css", "production/img/icons"]
 	}
 });
 	grunt.loadNpmTasks('grunt-contrib-compass');
@@ -77,6 +78,6 @@ grunt.initConfig({
 	grunt.loadNpmTasks('grunt-csso');
 
 	grunt.registerTask( 'default', ['watch']);
-	grunt.registerTask( 'release', ['clean:release', 'compass', 'copy', 'includereplace', 'csso']);
+	grunt.registerTask( 'release', ['clean:release', 'compass', 'copy:main', 'includereplace', 'csso', 'clean:after']);
 
 };
