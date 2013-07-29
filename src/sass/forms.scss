@@ -329,14 +329,16 @@
 		color: #000;
 		background: none;
 		border-color:transparent;
-		//@include unselectable();
+		@include unselectable();
+		position: relative;
+		z-index: 2;
 	}
 	.select-drop{
 		display: none;
 		position: absolute;
 		top: 36px;
-		left: 0;
-		right: 0;
+		left: -1px;
+		right: -1px;
 		max-height: 150px;
 		background:#fff;
 		border-radius: 0 0 4px 4px;

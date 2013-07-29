@@ -624,8 +624,8 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 
 .select { position: relative; border: 1px solid #b6b6b6; background: #fff; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; }
 .select:after { content: ""; border: 6px solid #999; border-color: #999 transparent transparent; position: absolute; top: 15px; right: 12px; cursor: pointer; }
-.select input { font-family: Arial,Helvetica,sans-serif; font-size: 16px; height: 37px; line-height: 37px; cursor: pointer; width: 140px; padding: 0 28px 0 15px; color: #000; background: none; border-color: transparent; }
-.select .select-drop { display: none; position: absolute; top: 36px; left: 0; right: 0; max-height: 150px; background: #fff; border-radius: 0 0 4px 4px; overflow: auto; outline: none; border: 1px solid #b6b6b6; border-top: 0; z-index: 5; }
+.select input { font-family: Arial,Helvetica,sans-serif; font-size: 16px; height: 37px; line-height: 37px; cursor: pointer; width: 140px; padding: 0 28px 0 15px; color: #000; background: none; border-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: relative; z-index: 2; }
+.select .select-drop { display: none; position: absolute; top: 36px; left: -1px; right: -1px; max-height: 150px; background: #fff; border-radius: 0 0 4px 4px; overflow: auto; outline: none; border: 1px solid #b6b6b6; border-top: 0; z-index: 5; }
 .select .select-drop li { padding: 4px 15px; color: #000; font-size: 16px; cursor: pointer; border-top: 1px solid #b6b6b6; position: relative; list-style: none; }
 .select .select-drop li:hover { background: #109e75; color: #fff; box-shadow: 0 1px 0 0 #b6b6b6; }
 

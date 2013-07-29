@@ -157,12 +157,13 @@ $(document).click(function() {
 $('.js-select').click(function(event){
     event.stopPropagation();
 });
-$('.js-select').find('li').click(function() {
+$('.js-select li').click(function() {
 	var val = $(this).text();
-	$(this).parent().parent().parent().parent().prev().html(val);
-	$(this).parent().parent().parent().parent().prev().val(val);
-	$(this).parent().parent().parent().parent().hide();
-	$(this).parent().parent().parent().parent().parent().removeClass('is-open');
+	var drop = $(this).closest('.select-drop');
+	drop.prev('span').html(val);
+	drop.prev('input').val(val);
+	drop.hide();
+	drop.parent().removeClass('is-open');
 });
 
 
