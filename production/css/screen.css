@@ -457,6 +457,9 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .popup_doctors-type .choose-doctor li { list-style: none; margin-bottom: 13px; line-height: 16px; }
 .popup_doctors-type .btn-hold { height: 38px; width: 100%; }
 .popup_doctors-type .btn { position: absolute; bottom: 25px; right: 32px; padding: 0 32px; }
+.popup_doctors-type input[type="radio"] + label:before { position: absolute; left: 0; }
+.popup_doctors-type input[type="radio"] + label { display: inline-block; position: relative; padding-left: 23px; }
+.popup_doctors-type input[type="radio"] { position: absolute; }
 
 .popup_metro { width: 738px; margin: -275px 0 0 -383px; padding: 17px 0 25px 28px; position: absolute; }
 .popup_metro .metro { position: relative; padding: 15px 0 0 5px; }
