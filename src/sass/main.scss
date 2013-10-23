@@ -1070,16 +1070,30 @@
 }
 
 .number-of-doctors{
-	width: 580px - 167px;
-	height: 157px - 16px;
-	background: url(../img/doctor5.png);
+	width: 580px;
+	min-height: 137px;
+	padding-bottom: 20px;
+	background: url(../img/doctor5.png) no-repeat;
+	margin: 36px 0 -4px 110px;
+}
+.number-of-doctors__text{
+	margin: 16px 0 0 137px;
+	padding: 15px 20px 17px 29px;
 	font-size: 26px;
 	color: #1b9c79;
 	font-family: $comic;
-	margin: 36px 0 -4px 110px;
-	padding: 16px 0 0 167px;
+	border: 1px solid #b6b6b6;
+	border-radius: 5px;
+	background: #ebebeb;
+	position: relative;
+	&:before{
+		@include sized-sprite($icons, 'doctor5-arr');
+		position: absolute;
+		content: '';
+		left: -18px;
+		top: 32px;
+	}
 }
-
 .ico-book{
 	@include sized-sprite($icons, 'ico-book');
 	display: inline-block;
