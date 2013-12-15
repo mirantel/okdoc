@@ -200,6 +200,13 @@ div.star-rating { background: transparent !important; overflow: hidden !importan
 .text-block p { margin: 3px 0 7px; }
 .text-block strong { font-size: 14px; }
 
+.text-block_seo { margin-bottom: 24px; }
+.text-block_seo h1 { font-size: 14px; margin: 3px 0 7px; }
+.text-block_seo h2, .text-block_seo h3 { font-size: 13px; margin-bottom: 5px; }
+.text-block_seo p { margin: 3px 0 7px; }
+.text-block_seo strong { font-size: 14px; }
+.text-block_seo .strong { font-size: 14px; font-weight: bold; display: inline; }
+
 .search-filter { margin: 32px 0 16px; overflow: hidden; }
 .search-filter strong { font-size: 14px; color: #404040; float: left; }
 .search-filter .sort-options li { list-style: none; float: left; background: #ebebeb; width: 86px; height: 17px; line-height: 17px; border-radius: 5px; border: 1px solid #b6b6b6; margin-left: 10px; font-size: 11px; text-align: center; cursor: pointer; }
